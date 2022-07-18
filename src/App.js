@@ -1,3 +1,4 @@
+import Button from "./Components/UI/Button";
 
 function App() {
   return (

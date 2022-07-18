@@ -1,0 +1,86 @@
+$heading1: 40px;
+$heading2: 32px;
+$heading3: 28px;
+$heading4: 24px;
+$heading5: 20px;
+$heading6: 12px;
+$headingp: 14px;
+
+// SUPER LIGHT FONT FOR LOGO
+$white: #edf5fc;
+$blue: #00497a;
+$dark-blue: #003d66;
+$dark-blue2: #00253d;
+$dark-blue3: #001829;
+$black: #000c14;
+
+$font-weight-thin: 100;
+$font-weight-normal: 400; /* Normal (Regular) */
+$font-weight-bold: 700; /* Bold */
+
+* {
+font-family: 'PT Sans', sans-serif;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+ul, li, a {
+    font-size: $headingp;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+}
+
+body{
+    background-color: #000c14;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #001829 12%, transparent 12.5%, transparent 87%, #001829 87.5%, #001829), linear-gradient(150deg, #001829 12%, transparent 12.5%, transparent 87%, #001829 87.5%, #001829), linear-gradient(30deg, #001829 12%, transparent 12.5%, transparent 87%, #001829 87.5%, #001829), linear-gradient(150deg, #001829 12%, transparent 12.5%, transparent 87%, #001829 87.5%, #001829), linear-gradient(60deg, #00182977 25%, transparent 25.5%, transparent 75%, #00182977 75%, #00182977), linear-gradient(60deg, #00182977 25%, transparent 25.5%, transparent 75%, #00182977 75%, #00182977);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    height: 100vh;
+}
+
+h1 {
+font-size: $heading1;
+color: $white;
+}
+
+h2 {
+font-size: $heading2;
+color: $white;
+}
+
+h3 {
+font-size: $heading3;
+color: $white;
+}
+
+h4 {
+font-size: $heading4;
+color: $white;
+}
+
+h5 {
+font-size: $heading5;
+color: $white;
+}
+
+h6 {
+font-size: $heading6;
+color: $white;
+}
+
+.p1, p, label {
+font-size: $headingp;
+color: $white;
+}
+
+heading{
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 10px;
+    font-size: 24px;
+    color: $white;
+}
+

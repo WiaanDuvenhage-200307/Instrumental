@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './Input.module.scss'
 
 export default function Input(props) {
   return (
@@ -8,7 +9,7 @@ export default function Input(props) {
         value={props.value}
         defaultValue={props.defaultValue}
         type={props.type}
-        className={props.className}
+        className={style.input}
         id={props.id}
     />
   )

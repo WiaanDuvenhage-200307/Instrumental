@@ -2,29 +2,31 @@
 
 
 // Login Input Styling
-.loginInput{
+.input{
     padding: 30px;
     border: 2px solid $aqua;
-    color: $blue;
+    color: $aqua;
     font-size: $heading4;
     background-color: transparent;
     border-radius: 50px;
     width: 100%;
     transition: 0.2s ease-in-out;
     height: 98px;
+    margin-bottom: 10%;
 }
 
-.loginInput::placeholder{
+.input::placeholder{
     color: $blue3;
     font-style: italic;
 }
 
-.loginInput:focus{
+.input:focus{
     background-color: white;
     outline: none;
+    border: 2px solid $white;
 }
 
-.loginInput:hover{
+.input:hover{
     border: 2px solid $white;
 }
 

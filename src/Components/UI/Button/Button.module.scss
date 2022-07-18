@@ -1,6 +1,6 @@
 @import '../../../Assets/base.scss';
 
-.loginBtn{
+.primBtnW{
     background-color: $white;
     border-radius: 49px;
     font-size: $heading3;
@@ -9,4 +9,12 @@
     width: 302px;
     height: 96px;
     border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.primBtnW:hover{
+    box-shadow: 10px 14px 48px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 14px 48px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 14px 48px -9px rgba(0,0,0,0.75);
+    transform: scale(1.1);
 }

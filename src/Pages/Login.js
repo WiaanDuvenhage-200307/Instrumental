@@ -17,10 +17,11 @@ export default function Login() {
         <div className={style.right}>
             <h3 className={style.heading}>LOG IN</h3>
             <h4 className={style.subText}>Welcome Back to Instrumental! <br /> Enter your details below</h4>
-            <br />
             <Input placeholder="someone@gmail.com" type="email"/>
             <Input placeholder="Password" type="password"/>
             <Button text="Log In"/>
+            <br />
+            <img src={logo} width={150}/>
         </div>
     </div>
   )

@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Input.module.scss'
 
+// TODO: ForwardRef | Scale Input Down
 export default function Input(props) {
   return (
     <input

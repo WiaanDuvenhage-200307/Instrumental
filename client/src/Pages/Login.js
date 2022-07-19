@@ -18,25 +18,23 @@ export default function Login() {
     // let password = passwordInput.current.value;
 
     const handleForm = () => {
-        let mailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        let email = emailInput.current.value;
-        console.log(email);
-        if(!email.match(mailRegex)){
-            setEmailWarn(`Email is incorrect! Try Again`)
-        }else{
-            setEmailWarn("");
-        }
-
+        let mailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         let passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(\W|_)).{5,}$/ ;
+        let email = emailInput.current.value;
         let password = passwordInput.current.value;
-        console.log(password);
-        if(!password.match(passRegex)){
-            setPasswordWarn(`Password is incorrect! Try again`)
-        }else{
-            setPasswordWarn("");
+        if(!email.match(mailRegex) && !password.match(passRegex)){
+            setEmailWarn('Email is incorrect! Try Again');
+            setPasswordWarn('Password is incorrect! Try again');
+        }else if (email === "" && password == ""){
+            setEmailWarn('Enter an email');
+            setPasswordWarn('Enter a password');
+        }else {
+            setEmailWarn('');
+            setPasswordWarn('');
+            navigate('/')
         }
 
-        navigate('/');
+
     }
 
   return (

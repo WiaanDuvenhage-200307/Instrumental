@@ -66,7 +66,7 @@ export default function Login() {
                 <p className={style.passwordWarn}>{passwordWarn}</p>
             </div>
             <br />
-            <Button text="Log In" onClick={ handleForm }/>
+            <Button className={style.primBtnW} text="Log In" onClick={ handleForm }/>
             <br />
             <img src={logo} width={150}/>
         </div>

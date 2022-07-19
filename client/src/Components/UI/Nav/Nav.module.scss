@@ -1,0 +1,47 @@
+@import '../../../Assets/base.scss';
+
+.nav{
+    height: 15vh;
+    background-color: $blue;
+    width: 100%;
+    padding: 50px 45px 45px 50px;
+    display: flex;
+    align-items: center;
+
+    .logo{
+        margin-right: 190px;
+    }
+
+    li{
+        color: $aqua;
+
+        &:hover{
+            color: $white;
+            cursor: pointer;
+        }
+    }
+
+    .search{
+        width: 20%;
+        margin-right: 100px;
+    }
+
+    .flexCol{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 8%;
+        margin-right: 10%;
+
+        .smallBtn{
+            background-color: $white;
+            font-size: $headingp;
+            color: $blue;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            width: 100%;
+        }
+    }
+}

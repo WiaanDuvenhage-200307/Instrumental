@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Nav from '../Components/UI/Nav/Nav';
+import style from './Home.module.scss';
 
 export default function Home() {
   return (
-    <div>This is the Home page which will display all our discounted products</div>
+    <div className={style.page}>
+        <Nav/>
+    </div>
   )
 }

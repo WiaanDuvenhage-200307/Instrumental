@@ -29,6 +29,9 @@ $font-weight-bold: 700;
         margin: 0;
         text-decoration: none;
         list-style-type: none;
+        display: inline;
+        margin-right: 50px;
+        transition: 0.1s ease-in-out;
     }
 }
 

@@ -48,4 +48,12 @@
         text-align: center;
         margin-bottom: 10%;
     }
+
+    .emailWarn, .passwordWarn{
+        color: $red;
+    }
+
+    .flex{
+        width: 100%;
+    }
 }

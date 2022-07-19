@@ -4,9 +4,11 @@ import logo from '../Assets/logo-light.svg';
 import bgImg from '../Assets/img/bg-img.jpg';
 import Input from '../Components/UI/Input/Input';
 import Button from '../Components/UI/Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
 
+    const navigate = useNavigate();
     const emailInput = useRef();
     const passwordInput = useRef();
     const [emailWarn, setEmailWarn] = useState();
@@ -33,6 +35,8 @@ export default function Login() {
         }else{
             setPasswordWarn("");
         }
+
+        navigate('/');
     }
 
   return (

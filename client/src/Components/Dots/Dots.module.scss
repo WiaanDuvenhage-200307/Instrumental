@@ -1,0 +1,13 @@
+@import '../../Assets/base.scss';
+
+.selected{
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.dots{
+    display: flex;
+    gap: 10px;
+}

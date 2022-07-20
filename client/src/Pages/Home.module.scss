@@ -4,4 +4,12 @@
     background-color: $blue2;
     height: 100vh;
     display: flex;
+    flex-flow: column;
+
+    .sliderImg{
+        height: 30%;
+        background-size:auto;
+        background-position: center;
+        object-fit: cover;
+    }
 }

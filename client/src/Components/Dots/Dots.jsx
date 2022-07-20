@@ -15,6 +15,8 @@ export default function Dots( props ) {
 
             props.imageNum(image)
         }, 2000)
+
+        return() => clearTimeout(timer);
     }, [image])
 
   return (

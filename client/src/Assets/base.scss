@@ -13,6 +13,7 @@ $aqua: #77ABB7;
 $white: #FFFFFF;
 $red: #ff0033;
 $orange: #FAC91B;
+$alpha: 0.5;
 
 $font-weight-thin: 300;
 $font-weight-regular: 400; 
@@ -24,13 +25,14 @@ $font-weight-bold: 700;
     margin: 0;
     box-sizing: border-box;
 
-    ul, li, a {
+    ul, li, a{
         padding: 0;
         margin: 0;
         text-decoration: none;
         list-style-type: none;
         display: inline;
-        margin-right: 50px;
+        display: flex;
+        gap: 50px;
         transition: 0.1s ease-in-out;
     }
 }

@@ -13,13 +13,13 @@ export default function Nav() {
         <ul className={style.navItems}>
             <Link to='/'><li>Home</li></Link>
             <Link to='/products'><li>Products</li></Link>
-            <Link to='about-us'><li>About Us</li></Link>
+            <Link to='/about-us'><li>About Us</li></Link>
         </ul>
         <div className={style.search}>
                 <Input placeholder="Search..."/>
         </div>
         <div className={style.flexCol}>
-            <p>Log In</p>
+            <Link to='login'><p>Log In</p></Link>
             <Button className={style.smallBtn} text='Register'/>
         </div>
         <img src={cart} width={25}/>

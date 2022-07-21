@@ -13,11 +13,13 @@ export default function Home() {
   return (
     <div className={style.page}>
         <Nav/>
+        {/* <div className={style.overlay}> */}
         <img
             src={ images[image] }
             alt=""
             className={style.sliderImg}
         />
+        {/* </div> */}
         <Dots
             images={ images }
             imageNum = {value => setImage(value)}

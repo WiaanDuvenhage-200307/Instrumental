@@ -6,6 +6,7 @@ import Logo from '../Assets/img/bg-img.jpg';
 import darkLogo from '../Assets/icons/cart.svg';
 import { sliderImages} from '../Components/sliderImages';
 import Slider from '../Components/SubComponents/Slider/Slider';
+import Card from '../Components/SubComponents/Card/Card';
 
 export default function Home() {
 
@@ -14,6 +15,11 @@ export default function Home() {
     <div className={style.page}>
         <Nav/>
         <Slider/>
+        <div className={style.cardCon}>
+        <Card/>
+        <Card/>
+        <Card/>
+        </div>
 
     </div>
   )

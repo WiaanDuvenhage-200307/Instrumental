@@ -5,6 +5,9 @@
     background-color: $blue2;
     display: flex;
     flex-flow: column;
+    height: 100vh;
 
-
+    .cardCon{
+        display: flex;
+    }
 }

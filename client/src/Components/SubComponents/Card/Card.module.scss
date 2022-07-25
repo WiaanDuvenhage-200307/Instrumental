@@ -1,0 +1,11 @@
+@import '../../../Assets/base.scss';
+
+.container{
+    background-color: $white;
+    width: 30%;
+    padding: 2%;
+
+    .bodyText{
+        color: $blue;
+    }
+}

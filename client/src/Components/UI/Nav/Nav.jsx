@@ -16,7 +16,7 @@ export default function Nav() {
             <Link to='/about-us'><li>About Us</li></Link>
         </ul>
         <div className={style.search}>
-                <Input placeholder="Search..."/>
+        <Input placeholder="Search..."/>
         </div>
         <div className={style.flexCol}>
             <Link to='login'><p>Log In</p></Link>

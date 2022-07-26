@@ -7,6 +7,7 @@ import darkLogo from '../Assets/icons/cart.svg';
 import { sliderImages} from '../Components/sliderImages';
 import Slider from '../Components/SubComponents/Slider/Slider';
 import Card from '../Components/SubComponents/Card/Card';
+import Footer from '../Components/UI/Footer/Footer';
 
 export default function Home() {
 
@@ -20,6 +21,8 @@ export default function Home() {
         <Card/>
         <Card/>
         </div>
+
+        <Footer/>
 
     </div>
   )

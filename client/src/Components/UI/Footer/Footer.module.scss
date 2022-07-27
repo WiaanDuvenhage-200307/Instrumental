@@ -3,7 +3,7 @@
 .container{
     height: 20vh;
     background-color: $aqua;
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -12,6 +12,10 @@
         display: flex;
         justify-content: space-evenly;
         width: 25%;
+        
+        img:hover{
+            cursor: pointer;
+        }
     }
 
     .emailContainer{

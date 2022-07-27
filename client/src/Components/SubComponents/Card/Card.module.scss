@@ -1,11 +1,82 @@
 @import '../../../Assets/base.scss';
 
-.container{
+.cardContainer{
     background-color: $white;
-    width: 30%;
-    padding: 2%;
+    width:42%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    margin-right: 1%;
 
-    .bodyText{
-        color: $blue;
+    img{
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+        height: 30vh;
     }
+
+
+    .bottomContainer{
+
+        display: flex;
+        padding: 10px 20px 10px 30px;
+        background-color: $white;
+        height:12vh;
+
+
+        .itemName{
+            width: 70%;
+            h4{
+                color: $blue;
+            }
+
+            .priceContainer{
+                display: flex;
+                margin-top: 1vh;
+
+                h4{
+                    font-weight: $font-weight-thin;
+                    margin-right: 5%;
+                }
+
+                .prevPrice{
+                    color: rgba(#1D3E53, 0.5);
+                }
+
+                .discountPrice{
+                    font-weight: $font-weight-regular;
+                }
+
+
+            }
+        }
+
+        .bodyText{
+            color: $blue;
+        }
+    
+        .buttonWrapper{
+            width: 50%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+
+            .addToCartBtn{
+                background-color: $blue;
+                border: none;
+                padding: 10px;
+                border-radius: 25px;
+                width: 50%;
+                color: $white;
+            }
+
+            p{
+                color: $blue;
+            }
+        }
+
+    }
+
+
 }

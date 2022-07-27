@@ -22,7 +22,7 @@ export default function Home() {
         <Card/>
         </div>
 
-        <Footer/>
+        {/* <Footer/> */}
 
     </div>
   )

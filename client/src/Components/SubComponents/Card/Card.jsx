@@ -1,14 +1,14 @@
 import React from 'react';
 import Button from '../../UI/Button/Button';
 import style from './Card.module.scss';
-import cardImg from '../../../Assets/img/bg-img.jpg';
+import cardImg from '../../../Assets/img/card-item.jpg';
 
 export default function Card(props) {
   return (
     <div className={style.cardContainer}>
 
         <div className={style.imgContainer}>
-            <img src={cardImg}/>
+            <img src={props.imgUrl}/>
         </div>
 
         <div className={style.bottomContainer}>

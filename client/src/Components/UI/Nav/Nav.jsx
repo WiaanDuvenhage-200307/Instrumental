@@ -13,6 +13,8 @@ export default function Nav() {
         <ul className={style.navItems}>
             <Link to='/'><li>Home</li></Link>
             <Link to='/products'><li>Products</li></Link>
+            <Link to='/inventory-management'><li>IM</li></Link>
+            <Link to='/order-processing'><li>OP</li></Link>
             <Link to='/about-us'><li>About Us</li></Link>
         </ul>
         <div className={style.search}>

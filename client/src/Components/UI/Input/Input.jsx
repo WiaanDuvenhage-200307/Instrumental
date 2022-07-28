@@ -9,7 +9,10 @@ const Input =  forwardRef((props, ref) => {
           placeholder={props.placeholder}
           defaultValue={props.defaultValue}
           name={props.name}
-          className={style.input}
+          className={`
+            ${props.className ? props.classname : ""}
+            ${props.type == "primary" ? style.primary : props.type == "secondary" ? style.secondary : style.tersiary}
+          `} 
           id={props.id}
           onChange={props.onChange}
           ref={ref}

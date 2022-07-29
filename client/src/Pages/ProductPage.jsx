@@ -3,7 +3,7 @@ import ProductCard from '../Components/SubComponents/ProductCard/ProductCard';
 import Nav from '../Components/UI/Nav/Nav';
 import style from './ProductPage.module.scss';
 import headerImg from '../Assets/img/guitar.png';
-import CategoryCard from '../Components/SubComponents/CategoryCard/CategoryCard';
+import FilterCard from '../Components/SubComponents/FilterCard/FilterCard';
 
 export default function ProductPage() {
 
@@ -26,9 +26,9 @@ export default function ProductPage() {
         <div className={style.pageContent}>
             <h3>Quick Filter</h3>
             <div className={style.flex}>
-                <CategoryCard text="Acoustic"/>
-                <CategoryCard text="Electric"/>
-                <CategoryCard text="Bass"/>
+                <FilterCard text="Acoustic"/>
+                <FilterCard text="Electric"/>
+                <FilterCard text="Bass"/>
             </div>
 
 

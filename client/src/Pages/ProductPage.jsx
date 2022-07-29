@@ -4,6 +4,7 @@ import Nav from '../Components/UI/Nav/Nav';
 import style from './ProductPage.module.scss';
 import headerImg from '../Assets/img/guitar.png';
 import FilterCard from '../Components/SubComponents/FilterCard/FilterCard';
+import Footer from '../Components/UI/Footer/Footer';
 
 export default function ProductPage() {
 
@@ -31,10 +32,18 @@ export default function ProductPage() {
                 <FilterCard text="Bass"/>
             </div>
 
+            <div className={style.flex}>
+                <ProductCard/>
+                <ProductCard/>
+                <ProductCard/>
+                <ProductCard/>
+                <ProductCard/>
+                <ProductCard/>
 
-            <ProductCard/>
+            </div>
+
         </div>
-
+        <Footer/>
     </div>
   )
 }

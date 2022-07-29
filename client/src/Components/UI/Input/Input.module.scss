@@ -3,7 +3,7 @@
 
 // Login Input Styling
 .primary{
-    padding: 5%;
+    padding: 4%;
     border: 2px solid $aqua;
     color: $aqua;
     font-size: $heading5;
@@ -30,7 +30,7 @@
 }
 
 .secondary{
-    padding: 5%;
+    padding: 3%;
     border: 2px solid $blue;
     color: $aqua;
     font-size: $heading5;
@@ -53,6 +53,33 @@
 }
 
 .secondary:hover{
+    border: 2px solid $white;
+}
+
+.searchInput{
+    width: 18%;
+    padding: 3.2% 5%;
+    border: 2px solid $aqua;
+    color: $aqua;
+    font-size: $heading5;
+    background-color: transparent;
+    border-radius: 50px;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    height: 4.7%;
+}
+
+.searchInput::placeholder{
+    color: $blue3;
+    font-style: italic;
+}
+
+.searchInput:focus{
+    outline: none;
+    border: 2px solid $white;
+}
+
+.searchInput:hover{
     border: 2px solid $white;
 }
 

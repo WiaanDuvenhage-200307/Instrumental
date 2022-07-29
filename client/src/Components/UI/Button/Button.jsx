@@ -6,7 +6,7 @@ export default function Button(props) {
     <button
         className={`
         ${props.className ? props.classname : ""}
-        ${props.type == "primary" ? style.primary : props.type == "secondary" ? style.secondary : style.tersiary}
+        ${props.type == "primary" ? style.primary : props.type == "secondary" ? style.secondary : props.type == "loginPageBtn" ? style.loginPageBtn : style.tersiary}
         `} 
         onClick={props.onClick}>
             {props.text}

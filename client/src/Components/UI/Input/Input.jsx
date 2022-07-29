@@ -11,7 +11,7 @@ const Input =  forwardRef((props, ref) => {
           name={props.name}
           className={`
             ${props.className ? props.classname : ""}
-            ${props.type == "primary" ? style.primary : props.type == "secondary" ? style.secondary : style.tersiary}
+            ${props.type == "primary" ? style.primary : props.type == "secondary" ? style.secondary : props.type == "searchInput" ? style.searchInput : style.tersiary}
           `} 
           id={props.id}
           onChange={props.onChange}

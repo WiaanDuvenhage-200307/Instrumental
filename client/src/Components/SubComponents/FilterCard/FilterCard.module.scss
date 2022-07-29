@@ -11,6 +11,7 @@
     background-color: red;
     background-image: url('../../../Assets/img/card-item.jpg');
     background-size: cover;
+    transition: 0.2 ease-in-out;
 
 
     h3{
@@ -19,7 +20,8 @@
     }
 
     &:hover{
-        transform: scale(1.1);
+        background-color: $blue3;
+        color: $blue;
         transition: 0.2 ease-in-out;
     }
 }

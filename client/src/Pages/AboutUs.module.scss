@@ -1,6 +1,7 @@
 @import './../Assets/base.scss';
 
 .container{
+    flex: 1;
     h2{
         color: $blue;
     }

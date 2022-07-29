@@ -51,7 +51,8 @@ export default function Login() {
             <div className={style.flex}>
                 <Input 
                     placeholder="someone@gmail.com"
-                    type="email"
+                    inputType="email"
+                    type="primary"
                     ref={ emailInput }
                 />
                 <p className={style.emailWarn}>{emailWarn}</p>
@@ -60,13 +61,14 @@ export default function Login() {
             <div className={style.flex}>
                 <Input 
                     placeholder="Password" 
-                    type="password"
+                    inputType="password"
+                    type="primary"
                     ref={ passwordInput }
                 />
                 <p className={style.passwordWarn}>{passwordWarn}</p>
             </div>
             <br />
-            <Button className={style.primBtnW} text="Log In" onClick={ handleForm }/>
+            <Button text="Log In" onClick={ handleForm } type="loginPageBtn"/>
             <br />
             <img src={logo} width={150}/>
         </div>

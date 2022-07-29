@@ -5,6 +5,7 @@ import ProductPage from "./Pages/ProductPage";
 import InventoryManagement from "./Pages/InventoryManagement";
 import OrderProcessing from "./Pages/OrderProcessing";
 import AboutUs from "./Pages/AboutUs";
+import './Assets/base.scss';
 
 
 function App() {

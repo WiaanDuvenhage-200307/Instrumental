@@ -19,7 +19,7 @@ export default function Footer() {
 
         <div className={style.emailContainer}>
             <label htmlFor='email'>Email Us</label>
-            <Input placeholder="someone@gmail.com"/>
+            <Input placeholder="someone@gmail.com" type="secondary"/>
         </div>
     </div>
   )

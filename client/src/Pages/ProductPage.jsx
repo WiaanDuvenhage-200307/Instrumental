@@ -3,6 +3,7 @@ import ProductCard from '../Components/SubComponents/ProductCard/ProductCard';
 import Nav from '../Components/UI/Nav/Nav';
 import style from './ProductPage.module.scss';
 import headerImg from '../Assets/img/guitar.png';
+import CategoryCard from '../Components/SubComponents/CategoryCard/CategoryCard';
 
 export default function ProductPage() {
 
@@ -17,13 +18,23 @@ export default function ProductPage() {
                 <div className={style.overlay}>
 
                     <div className={style.headerText}>
-                        <h2>Our Products</h2>
-                        <h4>Browse all our products for all of your musical needs. We have everything from guitars to audio headphones</h4>
+                        <h2>Our Guitars</h2>
+                        <h4>Browse all our guitars for all of your musical needs. We have everything from electric to banjo</h4>
                     </div>
                 </div>
             </header>
-        <h3>This is the product page</h3>
-        <ProductCard/>
+        <div className={style.pageContent}>
+            <h3>Quick Filter</h3>
+            <div className={style.flex}>
+                <CategoryCard text="Acoustic"/>
+                <CategoryCard text="Electric"/>
+                <CategoryCard text="Bass"/>
+            </div>
+
+
+            <ProductCard/>
+        </div>
+
     </div>
   )
 }

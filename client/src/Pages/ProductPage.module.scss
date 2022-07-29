@@ -39,4 +39,19 @@
             z-index: -1;
         }
     }
+
+    .pageContent{
+        padding: 40px 50px;
+
+        h3{
+            color: $blue;
+            font-weight: $font-weight-thin;
+            text-align: center;
+        }
+
+        .flex{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }

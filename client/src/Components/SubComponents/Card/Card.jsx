@@ -24,7 +24,7 @@ export default function Card(props) {
 
             <div className={style.buttonWrapper}>
                 <p>View More</p>
-                <Button text="Add to Cart" className={style.addToCartBtn}/>
+                <Button text="Add to Cart" type="secondary"/>
             </div>
 
         </div>

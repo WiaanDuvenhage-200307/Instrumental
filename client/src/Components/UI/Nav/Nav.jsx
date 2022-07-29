@@ -18,11 +18,11 @@ export default function Nav() {
             <Link to='/about-us'><li>About Us</li></Link>
         </ul>
         <div className={style.search}>
-        <Input placeholder="Search..."/>
+        <Input placeholder="Search..." type='primary' inputType="text"/>
         </div>
         <div className={style.flexCol}>
             <Link to='login'><p>Log In</p></Link>
-            <Button className={style.smallBtn} text='Register'/>
+            <Button text='Register' type="primary"/>
         </div>
         <img src={cart} width={25}/>
     </div>

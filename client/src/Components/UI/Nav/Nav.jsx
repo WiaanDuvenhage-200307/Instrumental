@@ -21,7 +21,7 @@ export default function Nav() {
         <Input placeholder="Search..." type='searchInput' inputType="text"/>
         </div>
         <div className={style.flexCol}>
-            <Link to='login'><p>Log In</p></Link>
+            <Link to='/login'><p>Log In</p></Link>
             <Button text='Register' type="primary"/>
         </div>
         <img src={cart} width={25}/>

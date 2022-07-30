@@ -39,7 +39,6 @@ export default function ProductPage() {
                 <ProductCard/>
                 <ProductCard/>
                 <ProductCard/>
-
             </div>
 
         </div>

@@ -23,8 +23,13 @@
             left:35%;
             transform: translate(-50%, -50%);
 
+            h2{
+                color: $white;
+            }
+
             h4{
                 font-weight: $font-weight-thin;
+                color: $white;
             }
         }
 

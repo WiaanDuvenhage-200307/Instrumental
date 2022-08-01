@@ -83,3 +83,48 @@
     border: 2px solid $white;
 }
 
+.filterInput{
+    width: 75%;
+    padding: 5%;
+    border: 2px solid $aqua;
+    color: $aqua;
+    font-size: $heading5;
+    background-color: transparent;
+    border-radius: 50px;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    margin: 2%;
+}
+
+.filterInput::placeholder{
+    color: $blue3;
+    font-style: italic;
+}
+
+.filterInput:focus{
+    outline: none;
+    border: 2px solid $white;
+}
+
+.filterInput:hover{
+    border: 2px solid $white;
+}
+
+.priceSlider{
+    -webkit-appearance: none;
+    height: 3px;
+    background: $white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    &::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        background: $white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+

@@ -22,7 +22,13 @@
         .headerText{
             padding: 50px 0px 0px 200px;
             width: 50%;
+
+            h2{
+                color: $white;
+            }
+
             h4{
+                color: $white;
                 font-weight: $font-weight-thin;
             }
 
@@ -44,16 +50,38 @@
     .pageContent{
         padding: 40px 50px;
 
-        h3{
+        .quickFilter{
             color: $blue;
             font-weight: $font-weight-thin;
             text-align: center;
         }
 
-        .flex{
+        hr{
+            border-top: 1px solid $aqua;
+        }
+
+        .quickFilterContainer{
             display: flex;
             justify-content:space-evenly;
-            margin-bottom: 5%;
+            margin-bottom: 2%;
         }
+
+        .row{
+            display: flex;
+            grid-template-columns: auto;
+            margin-top: 1%;
+
+            .productsContainer{
+                display: grid;
+                grid-template-columns: 25% 25% 25%;
+                padding: 10px;
+                justify-content:space-evenly;
+                margin-top: 5%;
+                height: 100%;
+                width: 70%;
+            }
+        }
+
+
     }
 }

@@ -5,6 +5,7 @@ import style from './ProductPage.module.scss';
 import headerImg from '../Assets/img/guitar.png';
 import FilterCard from '../Components/SubComponents/FilterCard/FilterCard';
 import Footer from '../Components/UI/Footer/Footer';
+import Filter from '../Components/SubComponents/Filter/Filter';
 
 export default function ProductPage() {
 
@@ -25,21 +26,38 @@ export default function ProductPage() {
                 </div>
             </header>
         <div className={style.pageContent}>
-            <h3>Quick Filter</h3>
-            <div className={style.flex}>
+            <h3 className={style.quickFilter}>Quick Filter</h3>
+            <div className={style.quickFilterContainer}>
                 <FilterCard text="Acoustic"/>
                 <FilterCard text="Electric"/>
                 <FilterCard text="Bass"/>
             </div>
 
-            <div className={style.flex}>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
+            <hr />
+
+            <div className={style.row}>
+
+                <Filter/>
+
+                <div className={style.productsContainer}>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                    <ProductCard/>
+                </div>
+                
             </div>
+
+
+
 
         </div>
         <Footer/>

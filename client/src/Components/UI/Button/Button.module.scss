@@ -73,3 +73,20 @@
     }
 }
 
+.addToCart{
+    width: 25%;
+    background-color: $blue;
+    border: none;
+    padding: 2%;
+    border-radius: 30px;
+    color: $white;
+    transition: 0.2s ease-in-out;
+    margin: 2% 0%;
+
+    &:hover{
+        background-color: $aqua;
+    }
+}
+
+
+

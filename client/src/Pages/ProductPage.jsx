@@ -6,6 +6,7 @@ import headerImg from '../Assets/img/guitar.png';
 import FilterCard from '../Components/SubComponents/FilterCard/FilterCard';
 import Footer from '../Components/UI/Footer/Footer';
 import Filter from '../Components/SubComponents/Filter/Filter';
+import { Link } from 'react-router-dom';
 
 export default function ProductPage() {
 
@@ -40,18 +41,15 @@ export default function ProductPage() {
                 <Filter/>
 
                 <div className={style.productsContainer}>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
-                    <ProductCard/>
+                    <Link to='/individual-product'><ProductCard/></Link>
+                    <Link to='/individual-product'><ProductCard/></Link>
+                    <Link to='/individual-product'><ProductCard/></Link>
+                    <Link to='/individual-product'><ProductCard/></Link>
+                    <Link to='/individual-product'><ProductCard/></Link>
+                    <Link to='/individual-product'><ProductCard/></Link>
+                    <Link to='/individual-product'><ProductCard/></Link>
+                    <Link to='/individual-product'><ProductCard/></Link>
+                    <Link to='/individual-product'><ProductCard/></Link>
                 </div>
                 
             </div>

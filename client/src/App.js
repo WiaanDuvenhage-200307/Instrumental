@@ -6,6 +6,7 @@ import InventoryManagement from "./Pages/InventoryManagement";
 import OrderProcessing from "./Pages/OrderProcessing";
 import AboutUs from "./Pages/AboutUs";
 import './Assets/base.scss';
+import IndividualProduct from "./Pages/IndividualProduct";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/inventory-management" element={<InventoryManagement/>}></Route>
             <Route path="/order-processing" element={<OrderProcessing/>}></Route>
             <Route path="/about-us" element={<AboutUs/>}></Route>
+            <Route path="/individual-product" element={<IndividualProduct/>}></Route>
         </Routes>
     </div>
   );

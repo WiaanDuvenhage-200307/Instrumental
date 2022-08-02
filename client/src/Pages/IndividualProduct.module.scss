@@ -13,14 +13,18 @@
         
         .left{
             margin-right: 5%;
+
+            .pBlue{
+                color: $blue;
+                margin-bottom: 2%;
+            }
+
             .goBack{
                 width: 15%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;            
-                .pBlue{
-                    color: $blue;
-                }
+
 
                 &:hover{
                     text-decoration: underline;
@@ -51,11 +55,12 @@
 
             
             .flex{
-                width: 15%;
+                width: 20%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 flex-direction: row;
+                margin-bottom: 20px;
 
                 img:hover{
                     cursor: pointer;
@@ -64,6 +69,20 @@
                 .qty{
                     color: $blue;
                 }
+            }
+
+            .flexPill{
+                display: flex;
+                width: 50%;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+            }
+
+            hr{
+                width: 50%;
+                border-top: 1px solid $blue;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
         }
 
@@ -89,6 +108,31 @@
             h4{
                 font-weight: $font-weight-thin;
                 font-style: italic;
+            }
+
+            .flex{
+                width: 36%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .oldPrice{
+                    text-decoration: line-through;
+                    color: rgba($blue, $alpha: 0.2);
+                }
+
+
+            }
+
+            .flexDesc{
+                display: flex;
+                width: 100%;
+                justify-content: space-evenly;
+                .column{
+                    display: flex;
+                    flex-flow: column;
+                    text-align: center;
+                }
             }
         }
 

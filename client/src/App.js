@@ -7,6 +7,7 @@ import OrderProcessing from "./Pages/OrderProcessing";
 import AboutUs from "./Pages/AboutUs";
 import './Assets/base.scss';
 import IndividualProduct from "./Pages/IndividualProduct";
+import Chart from "./Components/SubComponents/Chart/Chart";
 
 
 function App() {

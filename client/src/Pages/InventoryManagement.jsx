@@ -74,8 +74,6 @@ export default function InventoryManagement() {
                 <Chart/>
             </div>
         </div> 
-
-        <Footer/>
     </div>
   )
 }

@@ -233,5 +233,29 @@
         "variations": [{ "black": 6, "brown": 10 }]
       }
     ]
+  },
+  {
+    "id": 10,
+    "brand": "Fender",
+    "model": "American Performer Stratocaster",
+    "type": "Electric",
+    "price": 31.600,
+    "inStock": 15,
+    "desc": "A modern expression of the solidbody electric guitar that started it all, Fender’s American Performer Stratocaster delivers the latest in US-made quality and value. The American Performer Stratocaster boasts a massive tonal range. A trio of Fender Yosemite single-coil pickups — with flat-staggered pole pieces to increase output — serve up classic Strat spank and sparkle, infused with gobs of sustain for soloing. A push-pull tone knob lets you add the neck pickup to any position, opening up a huge, extended tonal range. The second tone pot engages Fender’s Greasebucket master tone circuit, which rolls off highs without reducing gain. Not to be overshadowed by its innovative electronics, the American Performer Stratocaster, naturally, features the outstanding comfort and playability you expect from a Fender Strat.",
+    "availStock": [
+      {
+        "neckLength": 623,
+        "qty": 7,
+        "handedness": "left",
+        "variations": [{ "white": 4, "brown": 3 }]
+      },
+      {
+        "neckLength": 321,
+        "qty": 8,
+        "handedness": "right",
+        "variations": [{ "black": 6, "brown": 10 }]
+      }
+    ]
   }
+
 ]

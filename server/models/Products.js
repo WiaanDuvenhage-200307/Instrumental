@@ -57,7 +57,12 @@ const productSchema = mongoose.Schema({
                 type: String,
                 required: true
             },
-            // ? "variations": [{ "red": 4, "black": 4, "brown": 6 }]
+            variations: [
+                { 
+                    colorOne: Object,
+                    colorTwo: Object,
+                }
+            ]
         },
         {
             neckLength: {
@@ -72,7 +77,19 @@ const productSchema = mongoose.Schema({
                 type: String,
                 required: true
             },
-            // ? "variations": [{ "red": 4, "black": 4, "brown": 6 }]
+            variations: [
+                {  
+                    colorOne: {
+                        type: String,
+                        required: true
+                    },
+                    colorTwo: {
+                        type: String,
+                        required: true
+                    }
+                    
+                }
+            ]
         }
     ]   
 });

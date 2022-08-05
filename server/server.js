@@ -12,9 +12,9 @@ app.use(routes);
 
 mongoose.connect(process.env.DB_CONNECTION, function(err) {
     if (err) {
-        console.log('no connection')
+        console.log('Connection to MongoDB Error')
     }else{
-        console.log('Connected');
+        console.log('Connected MongoDB');
     }
 });
 

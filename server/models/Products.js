@@ -58,10 +58,14 @@ const productSchema = mongoose.Schema({
                 required: true
             },
             variations: [
-                { 
-                    colorOne: Object,
-                    colorTwo: Object,
-                }
+                {                               
+                    colorOne: String,
+                    required: true
+                },
+                {                               
+                    colorTwo: String,
+                    required: true
+                }                    
             ]
         },
         {
@@ -78,17 +82,14 @@ const productSchema = mongoose.Schema({
                 required: true
             },
             variations: [
-                {  
-                    colorOne: {
-                        type: String,
-                        required: true
-                    },
-                    colorTwo: {
-                        type: String,
-                        required: true
-                    }
-                    
-                }
+                {                               
+                    colorOne: String,
+                    required: true
+                },
+                {                               
+                    colorTwo: String,
+                    required: true
+                }                    
             ]
         }
     ]   

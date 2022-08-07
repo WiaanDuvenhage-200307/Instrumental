@@ -255,7 +255,8 @@
     "brand": "Caraya",
     "model": "F640CE",
     "type": "Acoustic-Electric",
-    "price": 2.595,
+    "price": 2595,
+    "discountPrice": 1795,
     "inStock": 30,
     "desc": "The Caraya F640ce is a traditional dreadnaught body shape with a spruce top, producing fat, warm low end and crisp high end response. An Awesome option for anybody starting to play the acoustic guitar!",
     "imgUrl":[
@@ -278,13 +279,17 @@
     ]
   },
   {
-    "id": 10,
     "brand": "Fender",
     "model": "American Performer Stratocaster",
     "type": "Electric",
-    "price": 31.600,
+    "price": 31600,
     "inStock": 15,
     "desc": "A modern expression of the solidbody electric guitar that started it all, Fender’s American Performer Stratocaster delivers the latest in US-made quality and value. The American Performer Stratocaster boasts a massive tonal range. A trio of Fender Yosemite single-coil pickups — with flat-staggered pole pieces to increase output — serve up classic Strat spank and sparkle, infused with gobs of sustain for soloing. A push-pull tone knob lets you add the neck pickup to any position, opening up a huge, extended tonal range. The second tone pot engages Fender’s Greasebucket master tone circuit, which rolls off highs without reducing gain. Not to be overshadowed by its innovative electronics, the American Performer Stratocaster, naturally, features the outstanding comfort and playability you expect from a Fender Strat.",
+    "imgUrl":[
+        {"img1": "https://www.fmicassets.com/Damroot/ThumbnailJpg/10001/0114910342_gtr_frt_001_rr.jpg"},
+        {"img2": "https://www.fmicassets.com/Damroot/ZoomJpg/10001/0114910342_gtr_back_001_rl.jpg"},
+        {"img3": "https://www.fmicassets.com/Damroot/ThumbnailJpg/10001/0114910342_gtr_hdstckfrt_001_nr.jpg"}
+    ],
     "availStock": [
       {
         "neckLength": 623,

@@ -31,12 +31,11 @@ const productSchema = mongoose.Schema({
             required: true
         }},
         {img2: {
-            type: String,
-            required: true
+            type: String
+
         }},
         {img3: {
-            type: String,
-            required: true
+            type: String
         }}
     ],
     date: {
@@ -83,12 +82,12 @@ const productSchema = mongoose.Schema({
             },
             variations: [
                 {                               
-                    colorOne: String,
-                    colorQty: Number
+                    color: String,
+                    qty: Number
                 },
                 {                               
-                    colorTwo: String,
-                    colorQty: Number
+                    color: String,
+                    qty: Number
                 }                    
             ]
         }

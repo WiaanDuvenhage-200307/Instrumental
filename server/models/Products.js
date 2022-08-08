@@ -98,4 +98,66 @@ const productSchema = mongoose.Schema({
     ]   
 });
 
+const orderSchema = mongoose.Schema({
+    orderId: {
+        type: String,
+        required: true
+    },
+    userInfo: [
+        {
+            username: String,
+            email: String,
+            phoneNumber: Number,
+            address: {
+                street: String,
+                suburb: String,
+                city: String,
+                postalCode: Number
+            }
+        }
+    ],
+    orderInfo: [
+        {
+            orderDate: {
+                type: Date,
+                default: Date.now
+            },
+            paidOrder: Boolean,
+            products: [
+                {
+                    brand: String,
+                    model: String,
+                    type: String,
+                    color: String,
+                    qty: Number
+                }
+            ]
+        }
+    ]
+});
+
+const userSchema = mongoose.Schema({
+
+    name: {
+        type: String,
+        required: true
+    },
+    surname: String,
+    email: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    admin: {
+        type: Boolean,
+        required: true
+    }
+
+});
+
 module.exports = mongoose.model('products', productSchema);
+module.exports = mongoose.model('orders', orderSchema);
+module.exports = mongoose.model('users', userSchema);

@@ -1,5 +1,5 @@
 const express = require('express');
-const productSchema = require('./models/Products');
+const productSchema = require('./models/Schemas');
 
 const router = express();
 
@@ -8,20 +8,7 @@ const router = express();
 router.post('/api/addproduct', (req, res) => {
 
     const newProduct = new productSchema({
-        brand: req.body.brand,
-        model: req.body.model,
-        type: req.body.type,
-        price: +req.body.price,
-        inStock: req.body.inStock,
-        desc: req.body.desc,
-        img1: req.body.img1,
-        img2: req.body.img2,
-        img3: req.body.img3,
-        necklength: +req.body.necklength,
-        qty: +req.body.qty,
-        handedness: req.body.handedness,
-        colorOne: req.body.colorOne,
-        colorTwo: req.body.colorTwo
+
     });
 
     newProduct.save()

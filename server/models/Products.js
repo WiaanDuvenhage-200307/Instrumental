@@ -17,6 +17,14 @@ const productSchema = mongoose.Schema({
         type: Number,
         required: true
     },
+    discount: {
+        type: Number,
+        required: true
+    },
+    discountPrice: {
+        type: Number,
+        required: true
+    },
     inStock: {
         type: Number,
         required: true
@@ -58,12 +66,10 @@ const productSchema = mongoose.Schema({
             },
             variations: [
                 {                               
-                    colorOne: String,
-                    colorQty: Number
+                    color: Number
                 },
                 {                               
-                    colorTwo: String,
-                    colorQty: Number
+                    color: Number
                 }                    
             ]
         },
@@ -82,12 +88,10 @@ const productSchema = mongoose.Schema({
             },
             variations: [
                 {                               
-                    color: String,
-                    qty: Number
+                    color: Number
                 },
                 {                               
-                    color: String,
-                    qty: Number
+                    color: Number
                 }                    
             ]
         }

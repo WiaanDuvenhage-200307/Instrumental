@@ -128,3 +128,30 @@
     }
 }
 
+.paymentInput{
+    width: 70%;
+    padding: 2%;
+    border: 2px solid $aqua;
+    color: $aqua;
+    font-size: $heading5;
+    background-color: transparent;
+    border-radius: 50px;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    margin: 10px 10px 32px 10px;
+}
+
+.paymentInput::placeholder{
+    color: $blue3;
+    font-style: italic;
+}
+
+.paymentInput:focus{
+    outline: none;
+    border: 2px solid $white;
+}
+
+.paymentInput:hover{
+    border: 2px solid $white;
+}
+

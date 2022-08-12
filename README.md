@@ -22,7 +22,7 @@
   <h3 align="center">Instrumental</h3>
 
   <p align="center">
-    A React project built with React, PHP & MySQL .<br>
+    A React project built with MongoDB, Express, React & Node .<br>
     
    <br />
    <br />

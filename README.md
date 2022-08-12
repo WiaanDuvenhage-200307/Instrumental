@@ -16,7 +16,7 @@
 <p align="center">
 
   <a href="https://github.com/WiaanDuvenhage-200307/Instrumental">
-    <img src="src/Assets/logo-light.svg" alt="Logo" width="100px">
+    <img src="client/src/Assets/logo-light.svg" alt="Logo" width="100px">
   </a>
   
   <h3 align="center">Instrumental</h3>

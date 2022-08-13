@@ -1,0 +1,34 @@
+@import '../../../Assets/base.scss';
+
+.container{
+    width: 25%;
+    padding: 18px;
+    background-color: $blue2;
+    border-radius: 5px;
+    max-height: 50vh;
+    overflow-y: scroll;
+    flex: 1;
+
+    .cartItems{
+        width: 100%;
+        text-align: left;
+        overflow: scroll;
+
+        .cartHeading{
+            color: $aqua;
+            font-style: italic;
+            font-size: 14px;
+            font-weight: $font-weight-thin;
+        }
+
+        .totalPrice{
+            color: $aqua;
+        }
+
+        .cartDivider{
+            border: 1px solid $white;
+            width: 300%;
+            margin: 10px 0px 10px 0px;
+        }
+    }
+}

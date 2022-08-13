@@ -10,6 +10,7 @@ import IndividualProduct from "./Pages/IndividualProduct";
 import Chart from "./Components/SubComponents/Chart/Chart";
 import Checkout from "./Pages/Checkout";
 import Payment from "./Components/SubComponents/Payment/Payment";
+import CartModal from "./Components/SubComponents/CartModal/CartModal";
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
     //     </Routes>
     // </div>
     <div className="App">
-        <Checkout/>
+        {/* <Checkout/> */}
+        <CartModal/>
     </div>
   );
 }

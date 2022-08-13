@@ -8,6 +8,7 @@ export default function Card(props) {
     <div className={style.cardContainer}>
 
         <div className={style.imgContainer}>
+            <p className={style.stockWarning}>5 Left</p>
             <img src={props.imgUrl}/>
         </div>
 

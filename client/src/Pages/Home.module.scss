@@ -8,6 +8,32 @@
     height: 100vh;
 
     .cardCon{
+        width: 100%;
         display: flex;
+    }
+    .lowStockCon{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .heading{
+            color: $white;
+            margin: 20px 0px;
+        }
+    }
+
+    .bottomSection{
+        margin: 20px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .bottomSection_heading{
+            color: $white;
+            font-weight: $font-weight-thin;
+
+        }
     }
 }

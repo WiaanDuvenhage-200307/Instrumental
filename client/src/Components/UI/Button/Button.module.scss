@@ -98,6 +98,31 @@
     }
 }
 
+.browseNow{
+    background-color: $white;
+    font-size: $headingp;
+    color: $blue;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: fit-content;
+    transition: 0.2s ease-in-out;
+}
+.browseNow::placeholder{
+    color: $blue3;
+    font-style: italic;
+}
+
+.browseNow:active{
+    background-color: $aqua;
+    outline: none;
+}
+
+.browseNow:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 
 
 

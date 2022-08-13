@@ -15,21 +15,17 @@ import CartModal from "./Components/SubComponents/CartModal/CartModal";
 
 function App() {
   return (
-    // <div className="App">
-    //     <Routes>
-    //         <Route path="/" element={<Home/>}></Route>
-    //         <Route path="/login" element={<Login/>}></Route>
-    //         <Route path="/products" element={<ProductPage/>}></Route>
-    //         {/* <Route path="/products/:filter" element={<ProductPage/>}></Route> */}
-    //         <Route path="/inventory-management" element={<InventoryManagement/>}></Route>
-    //         <Route path="/order-processing" element={<OrderProcessing/>}></Route>
-    //         <Route path="/about-us" element={<AboutUs/>}></Route>
-    //         <Route path="/individual-product" element={<IndividualProduct/>}></Route>
-    //     </Routes>
-    // </div>
     <div className="App">
-        {/* <Checkout/> */}
-        <CartModal/>
+        <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/login" element={<Login/>}></Route>
+            <Route path="/products" element={<ProductPage/>}></Route>
+            {/* <Route path="/products/:filter" element={<ProductPage/>}></Route> */}
+            <Route path="/inventory-management" element={<InventoryManagement/>}></Route>
+            <Route path="/order-processing" element={<OrderProcessing/>}></Route>
+            <Route path="/about-us" element={<AboutUs/>}></Route>
+            <Route path="/individual-product" element={<IndividualProduct/>}></Route>
+        </Routes>
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function Button(props) {
     <button
         className={`
         ${props.className ? props.classname : ""}
-        ${props.type == "primary" ? style.primary : props.type == "secondary" ? style.secondary : props.type == "loginPageBtn" ? style.loginPageBtn : props.type == "priceFilterBtn" ? style.priceFilterBtn : props.type == "addToCart" ? style.addToCart : style.tersiary}
+        ${props.type == "primary" ? style.primary : props.type == "secondary" ? style.secondary : props.type == "loginPageBtn" ? style.loginPageBtn : props.type == "priceFilterBtn" ? style.priceFilterBtn : props.type == "addToCart" ? style.addToCart : props.type == "browseNow" ? style.browseNow : style.tersiary}
         `} 
         onClick={props.onClick}>
             {props.text}

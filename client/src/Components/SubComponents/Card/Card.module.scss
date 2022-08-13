@@ -8,6 +8,14 @@
     flex-flow: column;
     margin-right: 1%;
 
+    .stockWarning{
+        color: $red;
+        background-color: $red-light;
+        padding: 10px;
+        position: absolute;
+        width: fit-content;
+    }
+
     img{
         width: 100%;
         background-position: center;

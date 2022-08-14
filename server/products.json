@@ -7,9 +7,9 @@
     "inStock": 5,
     "desc": "The Gibson ES-335 DOT is the cornerstone of the Gibson ES line-up. From its inaugural appearance in 1958, the Gibson ES-335 set an unmatched standard. The pearloid dot inlay rosewood fingerboard on a hand-rolled Rounded 'C' mahogany neck remind players where it all started. Gibson's Calibrated T-Type humbucking pickups are paired with our hand-wired control assembly. The result is that versatile Gibson ES tone that players have craved for over 60 years. Tuning stability and precise intonation are provided by the Vintage Deluxe tuners with Keystone buttons, paired with light weight Aluminum ABR-1 bridge and Stop Bar tailpiece, anchored by steel thumb-wheels and tailpiece studs",
     "imgUrl": [
-        {"img1": "https://static.gibson.com/product-images/USA/USAVLJ627/Sixties Cherry/front-300_600.png"},
-        {"img2": "https://static.gibson.com/product-images/USA/USAVLJ627/Sixties%20Cherry/neck-side-500_500.png"},
-        {"img3": "https://static.gibson.com/product-images/USA/USAVLJ627/Sixties%20Cherry/back-neck-500_500.png"}
+        "https://static.gibson.com/product-images/USA/USAVLJ627/Sixties Cherry/front-300_600.png",
+        "https://static.gibson.com/product-images/USA/USAVLJ627/Sixties%20Cherry/neck-side-500_500.png",
+        "https://static.gibson.com/product-images/USA/USAVLJ627/Sixties%20Cherry/back-neck-500_500.png"
     ],
     "availStock": [
       {
@@ -34,9 +34,9 @@
     "inStock": 14,
     "desc": "For over two decades, the KX Series has represented the most exciting and aggressive side of Cort’s guitar lineup with sleek stylish looks, unique features, and determination to explore into the realm of extreme guitars. The KX700 EverTune is the most daring KX Series guitar yet, with completely redesigned body contour for a more aggressive and organic look, Seymour Duncan® Sentient & Nazgul Humbucker set for that center- of-the-earth growl, and EverTune® bridge system for maximum tuning stability.",
     "imgUrl": [
-        {"img1": "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTunefull.png"},
-        {"img2": "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTuneglam7.jpg"},
-        {"img3": "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTuneglam4.jpg"}
+        "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTunefull.png",
+        "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTuneglam7.jpg",
+        "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTuneglam4.jpg"
     ],
     "availStock": [
       {
@@ -62,9 +62,9 @@
     "inStock": 10,
     "desc": "The Super Stock SC1 comes loaded with plenty of classic Charvel attitude. Its So Cal-style alder body sports a heavy Black Relic finish that looks like it’s been to hell and back. The bolt-on maple neck and pau ferro fingerboard have been distressed for that well-worn baseball glove feel. Graphite-reinforcement rods provide optimal stability for various climate changes, while the heel-mount truss rod adjustment wheel makes for convenient neck relief tweaks. Built for speed, the 12”-16” compound radius fingerboard features comfortable rolled edges, 22 jumbo frets and cream dot inlays",
     "imgUrl":[
-        {"img1" : "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_frt_001_rr.png"},
-        {"img2" : "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_back_001_rl.png"},
-        {"img3" : "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_hdstckfrt_001_nr.png"}
+       "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_frt_001_rr.png",
+        "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_back_001_rl.png",
+        "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_hdstckfrt_001_nr.png"
     ],
     "availStock": [
       {
@@ -90,8 +90,8 @@
     "inStock": 25,
     "desc": "The Classic Rock Series delivers the look, feel and performance of the much sought-after vintage instruments from the Golden Era of electric guitars. At the heart of each CR Series guitar is the specially designed ClassicRocker pickups for an authentic vintage rock sound and response",
     "imgUrl":[
-        {"img1" : "https://www.cortguitars.com/_DATA/item/75/CR100CRSmain.png"},
-        {"img2" : "https://www.cortguitars.com/_DATA/item/75/thumb-CR100Detail1000px2_420x420.jpg"}
+        "https://www.cortguitars.com/_DATA/item/75/CR100CRSmain.png",
+        "https://www.cortguitars.com/_DATA/item/75/thumb-CR100Detail1000px2_420x420.jpg"
     ],
     "availStock": [
       {
@@ -117,9 +117,9 @@
     "inStock": 5,
     "desc": "The Made in Japan Boxer Series recreates a classic Fender collection from the late '80s. Designed for high-performance players, each Boxer Series instrument comes equipped with high-output pickups, speedy necks and advanced electronics. The Boxer Precision Bass® combines a high output P-Bass® split-coil pickup with a hot Jazz Bass® single-coil pickup, independent volume controls and a TBX™ tone control for super-flexible sonic options perfect for nearly any playing style. These basses feature a Medium “C”-shaped maple neck with a 12” radius rosewood fingerboard and 20 jumbo frets for comfortable, modern playability.",
     "imgUrl":[
-        {"img1" : "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/0251760358-247x247.jpg"},
-        {"img2" : "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/02517603581-247x247.jpg"},
-        {"img3" : "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/02517603583-247x247.jpg"}
+        "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/0251760358-247x247.jpg",
+        "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/02517603581-247x247.jpg",
+        "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/02517603583-247x247.jpg"
     ],
     "availStock": [
       {
@@ -145,8 +145,8 @@
     "inStock": 25,
     "desc": "The Yamaha C45 is an amazing full-sized nylon-string guitar that’s affordable enough for any guitarist. Whether you’re stepping up from a 3/4-size model or looking for a first classical guitar to start off with, you’ll be pleasantly surprised by the C45. Its full 2″ nut allows you to play with true classical finger techniques – just what you need to develop proper playing method. Featuring a real spruce top, on a back and sides made of quality Meranti, the Yamaha C45 provides you with a clear, resonant voice",
     "imgUrl": [
-        {"img1": "https://musiekwereld.co.za/wp-content/uploads/2020/04/Yamaha-C45-2-100x100-1.jpg"},
-        {"img2": "https://musiekwereld.co.za/wp-content/uploads/2020/04/Yamaha-C45-1.jpg"}
+        "https://musiekwereld.co.za/wp-content/uploads/2020/04/Yamaha-C45-2-100x100-1.jpg",
+        "https://musiekwereld.co.za/wp-content/uploads/2020/04/Yamaha-C45-1.jpg"
     ],
     "availStock": [
       {
@@ -171,9 +171,9 @@
       "inStock": 12,
       "desc": "Back in 2010, the AD60 was the model which our then new design team first focused on. It became the benchmark model, a reference in which other brand's and our previous models were measured. The goal and therefore the whole approach of the team was to simply make the best performing entry level guitar available. In tandem with developing our Artist Series, we were also developing bracing systems such as FST2 at the Yairi workshops, and bracing systems we cut there by hand were reproduced by machine for Artist Series in order to create “our sound” throughout our brand",
       "imgUrl": [
-        {"img1": "https://alvarezguitars.com/wp-content/uploads/2014/01/AD60CE-Front-3_4-1.jpg"},
-        {"img2": "https://alvarezguitars.com/wp-content/uploads/2014/01/AD60CE-Front-1.jpg"},
-        {"img3": "https://alvarezguitars.com/wp-content/uploads/2014/01/AD60CE-Back-3_4-1.jpg"}
+        "https://alvarezguitars.com/wp-content/uploads/2014/01/AD60CE-Front-3_4-1.jpg",
+        "https://alvarezguitars.com/wp-content/uploads/2014/01/AD60CE-Front-1.jpg",
+        "https://alvarezguitars.com/wp-content/uploads/2014/01/AD60CE-Back-3_4-1.jpg"
     ],
     "availStock": [
       {
@@ -201,9 +201,9 @@
       "inStock": 5,
       "desc": "Faithful to the Gretsch “Rex” parlor guitars of the 1930s, ’40s and ’50s, the all-new G9500 Jim Dandy Flat Top parlor-style model embodies everything that was great about everyone’s first guitar. Everything and then some, that is, because the G9500 is crafted with select guitar woods and is fully lined and braced for warm and pleasing tone, with a 24″ scale for endless hours of playing comfort.",
       "imgUrl": [
-        {"img1": "https://bothners.co.za/wp-content/uploads/2019/03/Gretsch-G9500-JIM-DANDY-FLAT-TOP-2SB-100x100.jpg"},
-        {"img2": "https://bothners.co.za/wp-content/uploads/2019/02/JD1-100x100.png"},
-        {"img3": "https://bothners.co.za/wp-content/uploads/2019/02/JD2-100x100.png"}
+        "https://bothners.co.za/wp-content/uploads/2019/03/Gretsch-G9500-JIM-DANDY-FLAT-TOP-2SB-100x100.jpg",
+        "https://bothners.co.za/wp-content/uploads/2019/02/JD1-100x100.png",
+        "https://bothners.co.za/wp-content/uploads/2019/02/JD2-100x100.png"
     ],
     "availStock": [
       {
@@ -231,9 +231,9 @@
       "inStock": 17,
       "desc": "The CJ-Retro is a Jumbo-sized acoustic-electric with a huge sound and a cool retro look. Featuring the classic jumbo body with Spruce top and Mahogany back and sides, Fishman electronics with magnetic humbucker and top-mounted controls, and tasteful retro appointments, the CJ-Retro is the perfect acoustic-electric for musicians looking for a big acoustic sound and a snazzy look.",
       "imgUrl": [
-        {"img1": "https://www.cortguitars.com/_DATA/item/1269/CJRetroVSMNewfullshot.png"},
-        {"img2": "https://www.cortguitars.com/_DATA/item/1269/thumb-CJRetroVSMDetails2_420x420.jpg"},
-        {"img3": "https://www.cortguitars.com/_DATA/item/1269/thumb-CJRetroVSMDetails1_420x420.jpg"}
+        "https://www.cortguitars.com/_DATA/item/1269/CJRetroVSMNewfullshot.png",
+        "https://www.cortguitars.com/_DATA/item/1269/thumb-CJRetroVSMDetails2_420x420.jpg",
+        "https://www.cortguitars.com/_DATA/item/1269/thumb-CJRetroVSMDetails1_420x420.jpg"
     ],
     "availStock": [
       {
@@ -260,8 +260,8 @@
     "inStock": 30,
     "desc": "The Caraya F640ce is a traditional dreadnaught body shape with a spruce top, producing fat, warm low end and crisp high end response. An Awesome option for anybody starting to play the acoustic guitar!",
     "imgUrl":[
-        {"img1": "https://bothners.co.za/wp-content/uploads/2018/12/Caraya-F640CE-Acoustic-Electric-Guitar-Body.jpg"},
-        {"img2": "https://bothners.co.za/wp-content/uploads/2018/12/0006573_caraya-f640ce-acoustic-electric-guitar-100x100.jpeg"}
+        "https://bothners.co.za/wp-content/uploads/2018/12/Caraya-F640CE-Acoustic-Electric-Guitar-Body.jpg",
+        "https://bothners.co.za/wp-content/uploads/2018/12/0006573_caraya-f640ce-acoustic-electric-guitar-100x100.jpeg"
     ],
     "availStock": [
       {
@@ -286,9 +286,9 @@
     "inStock": 15,
     "desc": "A modern expression of the solidbody electric guitar that started it all, Fender’s American Performer Stratocaster delivers the latest in US-made quality and value. The American Performer Stratocaster boasts a massive tonal range. A trio of Fender Yosemite single-coil pickups — with flat-staggered pole pieces to increase output — serve up classic Strat spank and sparkle, infused with gobs of sustain for soloing. A push-pull tone knob lets you add the neck pickup to any position, opening up a huge, extended tonal range. The second tone pot engages Fender’s Greasebucket master tone circuit, which rolls off highs without reducing gain. Not to be overshadowed by its innovative electronics, the American Performer Stratocaster, naturally, features the outstanding comfort and playability you expect from a Fender Strat.",
     "imgUrl":[
-        {"img1": "https://www.fmicassets.com/Damroot/ThumbnailJpg/10001/0114910342_gtr_frt_001_rr.jpg"},
-        {"img2": "https://www.fmicassets.com/Damroot/ZoomJpg/10001/0114910342_gtr_back_001_rl.jpg"},
-        {"img3": "https://www.fmicassets.com/Damroot/ThumbnailJpg/10001/0114910342_gtr_hdstckfrt_001_nr.jpg"}
+        "https://www.fmicassets.com/Damroot/ThumbnailJpg/10001/0114910342_gtr_frt_001_rr.jpg",
+        "https://www.fmicassets.com/Damroot/ZoomJpg/10001/0114910342_gtr_back_001_rl.jpg",
+        "https://www.fmicassets.com/Damroot/ThumbnailJpg/10001/0114910342_gtr_hdstckfrt_001_nr.jpg"
     ],
     "availStock": [
       {

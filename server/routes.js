@@ -1,5 +1,5 @@
 const express = require('express');
-const productSchema = require('./models/Schemas');
+const productSchema = require('./models/Products');
 
 const router = express();
 

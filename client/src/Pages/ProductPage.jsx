@@ -7,11 +7,27 @@ import FilterCard from '../Components/SubComponents/FilterCard/FilterCard';
 import Footer from '../Components/UI/Footer/Footer';
 import Filter from '../Components/SubComponents/Filter/Filter';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import axios from 'axios';
 
 export default function ProductPage() {
 
+    const [products, setProducts] = useState();
+
+
     useEffect(() =>{
         document.title = "Instrumental | Our Products"
+     }, [])
+
+     useEffect(() => {
+        axios.get('http://localhost:5000/api/allproducts')
+        .then(res => {
+            let productData = res.data;
+            console.log(productData.imgUrl);
+            let renderProducts = productData.map(i => <ProductCard key={i._id} brand={i.brand} model={i.model} price={i.price} img={i.imgUrl[0]}/>)
+            setProducts(renderProducts);
+        })
+        .catch(err => console.log(err))
      }, [])
 
   return (
@@ -41,21 +57,10 @@ export default function ProductPage() {
                 <Filter/>
 
                 <div className={style.productsContainer}>
-                    <Link to='/individual-product'><ProductCard/></Link>
-                    <Link to='/individual-product'><ProductCard/></Link>
-                    <Link to='/individual-product'><ProductCard/></Link>
-                    <Link to='/individual-product'><ProductCard/></Link>
-                    <Link to='/individual-product'><ProductCard/></Link>
-                    <Link to='/individual-product'><ProductCard/></Link>
-                    <Link to='/individual-product'><ProductCard/></Link>
-                    <Link to='/individual-product'><ProductCard/></Link>
-                    <Link to='/individual-product'><ProductCard/></Link>
+                    {products}
                 </div>
                 
             </div>
-
-
-
 
         </div>
         <Footer/>

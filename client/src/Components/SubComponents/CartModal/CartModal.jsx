@@ -3,14 +3,22 @@ import style from './CartModal.module.scss';
 import img from '../../../Assets/img/acoustic-1.jpg';
 import trash from '../../../Assets/icons/trash-light.svg';
 import Button from '../../UI/Button/Button';
+import { Link } from 'react-router-dom';
 
-export default function CartModal() {
+export default function CartModal(props) {
+
+    const closeModal = () => {
+        //This will pass a value of false into this prop
+        //that will be used to hide the modal
+        props.closeTheModal(false);
+    }
 
     // TODO: Fix checkout button to remain fixed
   return (
     <div className={style.container}>
         
         <table className={style.cartItems}>
+            <Button text="close Modal" onClick={closeModal}/>
             <thead>
                 <th className={style.cartHeading}></th>
                 <th className={style.cartHeading}>Product</th>
@@ -64,7 +72,7 @@ export default function CartModal() {
             </tr>
             <hr className={style.cartDivider}/>
         </table>
-        <Button text="Go To Checkout" type="primary"/>
+        <Link to="/checkout"><Button text="Go To Checkout" type="primary"/></Link>
     </div>
   )
 }

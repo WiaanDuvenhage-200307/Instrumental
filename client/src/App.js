@@ -25,6 +25,7 @@ function App() {
             <Route path="/order-processing" element={<OrderProcessing/>}></Route>
             <Route path="/about-us" element={<AboutUs/>}></Route>
             <Route path="/individual-product" element={<IndividualProduct/>}></Route>
+            <Route path="/checkout" element={<Checkout/>}></Route>
         </Routes>
     </div>
   );

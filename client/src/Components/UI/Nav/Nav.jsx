@@ -6,7 +6,13 @@ import cart from '../../../Assets/icons/cart.svg';
 import Input from '../Input/Input';
 import Button from '../Button/Button';
 
-export default function Nav() {
+export default function Nav( props ) {
+
+    const open = () => {
+        props.openTheModal(true);
+        console.log("Clciked");
+    }
+
   return (
     <div className={style.nav}>
         <img className={style.logo} src={logo} width={100} alt="instrumental_logo"/>
@@ -24,7 +30,7 @@ export default function Nav() {
             <Link to='/login'><p>Log In</p></Link>
             <Button text='Register' type="primary"/>
         </div>
-        <img src={cart} width={25}/>
+        <img className={style.cart} src={cart} width={25} onClick={open}/>
     </div>
   )
 }

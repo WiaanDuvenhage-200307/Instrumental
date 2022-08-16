@@ -23,9 +23,10 @@ export default function ProductPage() {
         axios.get('http://localhost:5000/api/allproducts')
         .then(res => {
             let productData = res.data;
-            console.log(productData.imgUrl);
+            console.log(productData);
             let renderProducts = productData.map(i => <ProductCard key={i._id} brand={i.brand} model={i.model} price={i.price} img={i.imgUrl[0]}/>)
             setProducts(renderProducts);
+            console.log(products);
         })
         .catch(err => console.log(err))
      }, [])

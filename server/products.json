@@ -27,20 +27,20 @@
     ]
   },
   {
-    "brand": "Cort",
-    "model": "KX700 Evertune",
+    "brand": "Gibson",
+    "model": "SG Standard '61 Maestro Vibrola",
     "type": "Electric",
     "price": 37.000,
     "inStock": 14,
-    "desc": "For over two decades, the KX Series has represented the most exciting and aggressive side of Cort’s guitar lineup with sleek stylish looks, unique features, and determination to explore into the realm of extreme guitars. The KX700 EverTune is the most daring KX Series guitar yet, with completely redesigned body contour for a more aggressive and organic look, Seymour Duncan® Sentient & Nazgul Humbucker set for that center- of-the-earth growl, and EverTune® bridge system for maximum tuning stability.",
+    "desc": "The SG™ Standard '61 Maestro™ Vibrola™ returns to the classic design that made it relevant, played, and loved -- shaping sound across generations and genres of music. As the name implies, the Gibson SG Standard '61 Maestro Vibrola adds vibrato capability to the SG Standard '61. The Maestro Vibrola offers smooth vibrato effects and the classic styling of the Lyre engraving on the tailpiece cover. Standard features include a SlimTaper™ mahogany neck and a bound rosewood fingerboard.",
     "imgUrl": [
-        "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTunefull.png",
-        "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTuneglam7.jpg",
-        "https://www.cortguitars.com/_DATA/item/1640670190/KX700EverTuneglam4.jpg"
+        "https://images.ctfassets.net/m8onsx4mm13s/5Eqnp3MyHuG9ekYkTlcxsy/2225b6fff165b8a8c393bc3849422ef9/__static.gibson.com_product-images_USA_USAD9T241_Vintage_Cherry_SG61V19VENH1_1.jpg?h=900",
+        "https://images.ctfassets.net/m8onsx4mm13s/2sHy9FukKvjrLlqIHA8uHi/009cdd2dcd5aa59a1791e8df13497259/__static.gibson.com_product-images_USA_USAD9T241_Vintage_Cherry_SG61V19VENH1_2.jpg?h=900",
+        "https://images.ctfassets.net/m8onsx4mm13s/0u2wlMCOR6Ku9bgwfrC63l/b34d2fed73fb12b1d38d1d8190f802c9/__static.gibson.com_product-images_USA_USAD9T241_Vintage_Cherry_hardware-500_500.png?h=900"
     ],
     "availStock": [
       {
-        "neckLength": 411,
+        "neckLength": 628,
         "qty": 6,
         "handedness": "left",
         "variations": [{ "brown": 3, "white": 3 }]
@@ -54,17 +54,17 @@
     ]
   },
   {
-    "brand": "Charvel",
-    "model": "SC1",
+    "brand": "Gibson",
+    "model": "Les Paul 70s Deluxe",
     "type": "Electric",
     "price": 26.995,
     "discountPrice": 20.221,
     "inStock": 10,
-    "desc": "The Super Stock SC1 comes loaded with plenty of classic Charvel attitude. Its So Cal-style alder body sports a heavy Black Relic finish that looks like it’s been to hell and back. The bolt-on maple neck and pau ferro fingerboard have been distressed for that well-worn baseball glove feel. Graphite-reinforcement rods provide optimal stability for various climate changes, while the heel-mount truss rod adjustment wheel makes for convenient neck relief tweaks. Built for speed, the 12”-16” compound radius fingerboard features comfortable rolled edges, 22 jumbo frets and cream dot inlays",
+    "desc": "First released in 1969, the Deluxe saw the introduction of the mini humbucker™ to the Les Paul lineup. Mini humbuckers retain the hum-free performance of their full-sized cousins but with a somewhat clearer and brighter tonality. The new Deluxe has features that were inspired by those early models from the 1970s, with a non-weight relief mahogany body and bound maple top, a bound mahogany neck with a Rounded C profile, vintage-style Keystone tuners, Graph Tech® nut, and a traditional Les Paul control layout with 2 Volume and 2 Tone controls wired with Orange Drop® capacitors",
     "imgUrl":[
-       "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_frt_001_rr.png",
-        "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_back_001_rl.png",
-        "https://www.fmicassets.com/Damroot/Zoom/10001/2966835503_gtr_hdstckfrt_001_nr.png"
+       "https://images.ctfassets.net/m8onsx4mm13s/3KMv9awGsI008N7wMewZPg/aeec9a3919b378e2e630436ca3022929/__static.gibson.com_product-images_USA_USAMRP793_70s_Cherry_Sunburst_LPDX007CCH1_front.jpg?h=900",
+        "https://images.ctfassets.net/m8onsx4mm13s/2RpiungUZdHAiRtMP9FObH/d8654c51cced5e2256eb717ada7ba046/__static.gibson.com_product-images_USA_USAMRP793_70s_Cherry_Sunburst_LPDX007CCH1_back.jpg?h=900",
+        "//images.ctfassets.net/m8onsx4mm13s/0Sn8SnBxm7f0GMOdZAXvzI/88ba316815673002114293c4262d3cc0/__static.gibson.com_product-images_USA_USAMRP793_70s_Cherry_Sunburst_hardware-500_500.png?h=900"
     ],
     "availStock": [
       {
@@ -82,16 +82,17 @@
     ]
   },
   {
-    "brand": "Cort",
-    "model": "CR100",
-    "type": "Electric",
-    "price": 6.395,
-    "discountPrice": 5.370,
+    "brand": "Gibson",
+    "model": "50s J-45 Original",
+    "type": "Acoustic",
+    "price": 6395,
+    "discountPrice": 5370,
     "inStock": 25,
-    "desc": "The Classic Rock Series delivers the look, feel and performance of the much sought-after vintage instruments from the Golden Era of electric guitars. At the heart of each CR Series guitar is the specially designed ClassicRocker pickups for an authentic vintage rock sound and response",
+    "desc": "The new 50s J-45 Original model flaunts vintage-inspired detailing from the golden era of Gibson. Classic “Workhorse” materials include a Sitka Spruce top and Select Mahogany back and sides. The multi-ply top and single-ply back binding are subtly antiqued making each instrument look just like a seasoned Gibson acoustic. Appointed with cream button tuners, a 50s-era tortoise pick guard, and upgraded with an LR Baggs® VTC pickup for the best and most natural-sounding tone when amplified.",
     "imgUrl":[
-        "https://www.cortguitars.com/_DATA/item/75/CR100CRSmain.png",
-        "https://www.cortguitars.com/_DATA/item/75/thumb-CR100Detail1000px2_420x420.jpg"
+        "https://images.ctfassets.net/m8onsx4mm13s/6wT73EncEt6Hsb3uvS3iK4/5a5cdf7196afc241f5fd79e20d02e18b/__static.gibson.com_product-images_Acoustic_ACCSRX331_Ebony_OCRS4550EB_front.jpg?h=900",
+        "//images.ctfassets.net/m8onsx4mm13s/77OomnmtSgqhjKoueVuE6R/7c31949cdf2817795ef9bc81feb83a14/__static.gibson.com_product-images_Acoustic_ACCSRX331_Ebony_OCRS4550EB_back.jpg?h=900",
+        "//images.ctfassets.net/m8onsx4mm13s/1dAD1GVlcLSNJ1w6u1nznj/79a6e187086fd410896e7c0ad1110daf/__static.gibson.com_product-images_Acoustic_ACCSRX331_Ebony_hardware-500_500.png?h=900"
     ],
     "availStock": [
       {
@@ -109,17 +110,17 @@
     ]
   },
   {
-    "brand": "Fender",
-    "model": "Boxer 4-String",
-    "type": "Bass",
+    "brand": "Gibson",
+    "model": "Southern Jumbo Original",
+    "type": "Acoustic",
     "price": 34395,
     "discountPrice": 28995,
     "inStock": 5,
-    "desc": "The Made in Japan Boxer Series recreates a classic Fender collection from the late '80s. Designed for high-performance players, each Boxer Series instrument comes equipped with high-output pickups, speedy necks and advanced electronics. The Boxer Precision Bass® combines a high output P-Bass® split-coil pickup with a hot Jazz Bass® single-coil pickup, independent volume controls and a TBX™ tone control for super-flexible sonic options perfect for nearly any playing style. These basses feature a Medium “C”-shaped maple neck with a 12” radius rosewood fingerboard and 20 jumbo frets for comfortable, modern playability.",
+    "desc": "The Southern Jumbo is renowned for its proficiency to belt out country rhythms or acoustic blues leads. Original examples are among the most prized war-era flat-tops in today’s vintage market. This new Southern Jumbo Original picks up where those classic models left off. Classic Southern Jumbo detailing includes parallelogram inlays, double antiqued multi-ply top and back binding, and nickel open back tuners.",
     "imgUrl":[
-        "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/0251760358-247x247.jpg",
-        "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/02517603581-247x247.jpg",
-        "https://www.marshallmusic.co.za/wp-content/uploads/2021/12/02517603583-247x247.jpg"
+        "https://images.ctfassets.net/m8onsx4mm13s/7APPdFiBTWgrsqQnlflyd7/a6a5b1511e4c4c92e6b28c8ba1d267fc/__static.gibson.com_product-images_Acoustic_ACCYBI462_Vintage_Sunburst_OCRSSJVS_front.jpg?h=900",
+        "//images.ctfassets.net/m8onsx4mm13s/2QM536LEeTddjd9jG96m3W/ffec6407e3bc3cb2b096628568e26b02/__static.gibson.com_product-images_Acoustic_ACCYBI462_Vintage_Sunburst_OCRSSJVS_back.jpg?h=900",
+        "//images.ctfassets.net/m8onsx4mm13s/1QWjJ1GHux5tvyhX0j4l7D/303d1bf91cf376cf775e5944bfcd1e79/__static.gibson.com_product-images_Acoustic_ACCYBI462_Vintage_Sunburst_hardware-500_500.png?h=900"
     ],
     "availStock": [
       {
@@ -138,15 +139,16 @@
   },
   {
     "id": 5,
-    "brand": "Yamaha",
-    "model": "C45 Classical",
-    "type": "Acoustic",
-    "price": 2.195,
+    "brand": "Gibson",
+    "model": "Flying V",
+    "type": "Electric",
+    "price": 23195,
     "inStock": 25,
-    "desc": "The Yamaha C45 is an amazing full-sized nylon-string guitar that’s affordable enough for any guitarist. Whether you’re stepping up from a 3/4-size model or looking for a first classical guitar to start off with, you’ll be pleasantly surprised by the C45. Its full 2″ nut allows you to play with true classical finger techniques – just what you need to develop proper playing method. Featuring a real spruce top, on a back and sides made of quality Meranti, the Yamaha C45 provides you with a clear, resonant voice",
+    "desc": "Introduced in 1958 and only made in limited quantities, the Gibson Flying V™ has taken flight over the years along with legions of followers. This Flying V carries heritage to new heights. The Antique Natural finish, mahogany body, and SlimTaper™ neck with rosewood fingerboard provide classic looks, sound, and playability. A special set of calibrated BurstBucker™ 2 (neck) and BurstBucker 3 (bridge) pickups provide that perfect mix of volume, tone, and power.",
     "imgUrl": [
-        "https://musiekwereld.co.za/wp-content/uploads/2020/04/Yamaha-C45-2-100x100-1.jpg",
-        "https://musiekwereld.co.za/wp-content/uploads/2020/04/Yamaha-C45-1.jpg"
+        "//images.ctfassets.net/m8onsx4mm13s/0QyBbh1XJYBpI9Vwt1q4hW/7957903ad2bfa304142a28da04d8e690/__static.gibson.com_product-images_USA_USAM1U838_Antique_Natural_DSV19ANCH1_1.jpg?h=300",
+        "//images.ctfassets.net/m8onsx4mm13s/77IXSn7L4TbpKfiT36vyCa/5400513be5db015446aa41f623c90696/__static.gibson.com_product-images_USA_USAM1U838_Antique_Natural_DSV19ANCH1_2.jpg?h=900",
+        "//images.ctfassets.net/m8onsx4mm13s/0PM8bLHNSGykFHEBtC5C3a/045492f5ea301c30920458b7307095f3/__static.gibson.com_product-images_USA_USAM1U838_Antique_Natural_hardware-500_500.png?h=900"
     ],
     "availStock": [
       {

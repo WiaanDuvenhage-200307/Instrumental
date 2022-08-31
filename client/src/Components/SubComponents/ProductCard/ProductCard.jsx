@@ -1,8 +1,18 @@
 import React from 'react';
 import style from './ProductCard.module.scss';
-import img from '../../../Assets/img/acoustic-1.jpg';
+import Button from '../../UI/Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 export default function ProductCard(props) {
+
+  const navigate = useNavigate();
+
+  const goToGuitar = () => {
+    var thisThing = sessionStorage.setItem('productId', props.productId);
+    console.log(thisThing);
+    navigate('/individual-product');
+  }
+
   return (
     <div className={style.container}>
         <div className={style.imgContainer}>
@@ -12,6 +22,7 @@ export default function ProductCard(props) {
             <h5>{props.brand} {props.model}</h5>
             <p>R{props.price}</p>
         </div>
+        <Button text="view more" type="secondary" onClick={goToGuitar}/>
     </div>
   )
 }

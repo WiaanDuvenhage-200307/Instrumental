@@ -10,6 +10,8 @@ import minus from '../Assets/icons/minus.svg';
 import plus from '../Assets/icons/plus.svg';
 import ColorPicker from '../Components/SubComponents/ColorPicker/ColorPicker';
 import Pill from '../Components/UI/Pill/Pill';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 export default function IndividualProduct() {
 
@@ -17,9 +19,41 @@ export default function IndividualProduct() {
 
     const [qty, setQty] = useState(1);
 
+    let productId = sessionStorage.getItem("productId");
+    console.log(productId);
+
     const addToCart = () => {
         alert("Gibson ES-335 has been added to cart!");
     }
+
+    const [productData, setProductData] = useState({
+        productBrand: "",
+        productModel: "",
+        productType: "",
+        productDiscountPrice: "",
+        productPrice: "",
+        productInStock: "",
+        productDesc: "",
+        productImg: ""
+    });
+
+    useEffect(() => {
+        axios.get('http://localhost:5000/api/oneproduct/' + productId)
+        .then(res => {
+            let data = res.data;
+            setProductData({
+                productBrand: data.brand,
+                productModel: data.model,
+                productType: data.type,
+                productDiscountPrice: data.discountPrice,
+                productPrice: data.price,
+                productInStock: data.inStock,
+                productDesc: data.desc,
+                productImg: data.imgUrl[0]
+            })
+
+        })
+    }, [])
 
   return (
     <div className={style.container}>
@@ -37,7 +71,7 @@ export default function IndividualProduct() {
                 </div>
 
                 <div className={style.productImg}>
-                    <img src={productImg}/>
+                    <img src={productData.productImg}/>
                 </div>
                 <br />
                 <p className={style.lowStock}>Only 2 Left!</p>
@@ -67,20 +101,16 @@ export default function IndividualProduct() {
             </div>
 
             <div className={style.right}>
-                <h3>Gibson ES-335</h3>
-                <h4>Electric Guitar</h4>
+                <h3>{productData.productBrand} {productData.productModel}</h3>
+                <h4>{productData.productType}</h4>
                 <div className={style.flex}>
-                    <h3 className={style.oldPrice}>R12,600</h3>
-                    <h3 className={style.totalPrice}>R8,000</h3>
+                    <h3 className={style.oldPrice}>R{productData.productPrice}</h3>
+                    <h3 className={style.totalPrice}>R{productData.productDiscountPrice}</h3>
                 </div>
                 <br />
                 <p className={style.aboutProductHeading}>About The Product</p>
                 <br />
-                <p className={style.desc}>The Gibson ES-335 DOT is the cornerstone of the Gibson ES line-up.
-                From its inaugural appearance in 1958, the Gibson ES-335 set an unmatched standard.
-                The pearloid dot inlay rosewood fingerboard on a hand-rolled Rounded 'C' mahogany neck remind players where it all started. Gibson's Calibrated T-Type humbucking pickups are paired with our hand-wired control assembly.
-                The result is that versatile Gibson ES tone that players have craved for over 60 years. Tuning stability and precise intonation are provided by the Vintage Deluxe tuners with Keystone buttons,
-                 paired with light weight Aluminum ABR-1 bridge and Stop Bar tailpiece, anchored by steel thumb-wheels and tailpiece studs.</p>
+                <p className={style.desc}>{productData.productDesc}</p>
                  <br />
                  <br />
                  <div className={style.flexDesc}>

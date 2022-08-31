@@ -15,10 +15,10 @@ export default function Card(props) {
         <div className={style.bottomContainer}>
 
             <div className={style.itemName}>
-                <h4>Gibson ES-335</h4>
+                <h4>{props.brand} {props.model}</h4>
                 <div className={style.priceContainer}>
-                    <h4 className={style.prevPrice}>R 3 500</h4>
-                    <h4 className={style.discountPrice}>R 3 000</h4>
+                    <h4 className={style.prevPrice}>{props.price}</h4>
+                    <h4 className={style.discountPrice}>{props.discountPrice}</h4>
                 </div>
 
             </div>

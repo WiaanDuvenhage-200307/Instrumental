@@ -2,7 +2,7 @@
 
 .cardContainer{
     background-color: $white;
-    width:42%;
+    min-width:40%;
     display: flex;
     justify-content: space-between;
     flex-flow: column;
@@ -19,7 +19,7 @@
     img{
         width: 100%;
         background-position: center;
-        object-fit: cover;
+        object-fit: scale-down;
         height: 30vh;
     }
 

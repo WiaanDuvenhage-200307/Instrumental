@@ -6,10 +6,13 @@
     display: flex;
     flex-flow: column;
     height: 100vh;
+    overflow: hidden;
+    width: 100%;
 
     .cardCon{
         width: 100%;
         display: flex;
+        overflow: hidden;
     }
     .lowStockCon{
         width: 100%;
@@ -17,6 +20,7 @@
         flex-flow: column;
         justify-content: center;
         align-items: center;
+        overflow-x: hidden;
         .heading{
             color: $white;
             margin: 20px 0px;

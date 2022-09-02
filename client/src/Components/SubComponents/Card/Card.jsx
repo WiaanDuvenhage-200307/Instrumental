@@ -1,9 +1,18 @@
 import React from 'react';
 import Button from '../../UI/Button/Button';
 import style from './Card.module.scss';
-import cardImg from '../../../Assets/img/card-item.jpg';
+import { useNavigate } from 'react-router-dom';
 
 export default function Card(props) {
+
+    const navigate = useNavigate();
+
+    const goToGuitar = () => {
+      var thisThing = sessionStorage.setItem('productId', props.productId);
+      console.log(thisThing);
+      navigate('/individual-product');
+    }
+
   return (
     <div className={style.cardContainer}>
 
@@ -24,7 +33,7 @@ export default function Card(props) {
             </div>
 
             <div className={style.buttonWrapper}>
-                <p>View More</p>
+                <p onClick={goToGuitar}>View More</p>
                 <Button text="Add to Cart" type="secondary"/>
             </div>
 

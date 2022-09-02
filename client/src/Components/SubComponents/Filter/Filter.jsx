@@ -29,8 +29,6 @@ export default function Filter() {
             <Button text="Filter" type="priceFilterBtn"/>
         </div>
         <hr />
-        <label htmlFor='colorFilter'>Brand</label>
-        <Dropdown/>
         <label htmlFor='colorFilter'>Model</label>
         <Dropdown/>
         <label htmlFor='colorFilter'>Color</label>

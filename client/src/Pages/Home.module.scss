@@ -13,6 +13,13 @@
         width: 100%;
         display: flex;
         overflow: hidden;
+
+        .chevron{
+            position: absolute;
+            z-index: 1;
+            top: 65%;
+            right: 0%;
+        }
     }
     .lowStockCon{
         width: 100%;

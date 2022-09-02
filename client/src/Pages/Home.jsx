@@ -9,6 +9,8 @@ import axios from 'axios';
 import Button from '../Components/UI/Button/Button';
 import { Link } from 'react-router-dom';
 import CartModal from '../Components/SubComponents/CartModal/CartModal';
+import chevLeft from '../Assets/icons/goLeft.svg';
+import chevRight from '../Assets/icons/goRight.svg';
 
 export default function Home() {
 
@@ -21,6 +23,26 @@ export default function Home() {
     useEffect(() =>{
         document.title = "Instrumental | Home"
     }, [])
+
+    const goLeft = (e) => {
+        let scrollBtn = e.currentTarget.parentNode;
+        let currPos = scrollBtn.scrollLeft;
+        scrollBtn.scroll({
+            left: currPos -= 1200,
+            top: 0,
+            behaviour: 'smooth'
+        })
+    }
+
+    const goRight = (e) => {
+        let scrollBtn = e.currentTarget.parentNode;
+        let currPos = scrollBtn.scrollLeft;
+        scrollBtn.scroll({
+            left: currPos += 1200,
+            top: 0,
+            behaviour: 'smooth'
+        })
+    }
 
     useEffect(() => {
         axios.get('http://localhost:5000/api/allproducts')
@@ -50,7 +72,9 @@ export default function Home() {
         }
         <Slider/>
         <div className={style.cardCon}>
+            <img onClick={goLeft} className={style.chevron} src={chevLeft} width={50}/>
             {products}
+            <img onClick={goRight} className={style.chevron} src={chevRight}/>
         </div>
 
         <div className={style.lowStockCon}>

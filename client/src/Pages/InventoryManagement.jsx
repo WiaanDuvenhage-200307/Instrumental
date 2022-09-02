@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Footer from '../Components/UI/Footer/Footer';
 import Nav from '../Components/UI/Nav/Nav';
 import style from './InventoryManagement.module.scss';
@@ -6,12 +6,32 @@ import img from '../Assets/inventory-management-illustration.svg';
 import Button from '../Components/UI/Button/Button';
 import Chart from '../Components/SubComponents/Chart/Chart';
 import Input from '../Components/UI/Input/Input';
+import axios from 'axios';
+import UpdateModal from '../Components/SubComponents/UpdateModal/UpdateModal';
 
-export default function InventoryManagement() {
+export default function InventoryManagement(props) {
 
+    const [products, setProducts] = useState([]);
+
+    const [modal, setModal] = useState();
     useEffect(() =>{
         document.title = "Inventory Management "
-     }, [])
+    }, [])
+
+
+    useEffect(() => {
+        axios.get('http://localhost:5000/api/allproducts')
+        .then(res => {
+            let productData = res.data;
+            console.log(productData);
+            setProducts(productData);
+        })
+        .catch(err => console.log(err))
+    }, [])
+
+    const update = () => {
+        setModal(<UpdateModal/>)
+    }
 
   return (
     <div className={style.container}>
@@ -38,35 +58,13 @@ export default function InventoryManagement() {
                         <th>Qty</th>
                         <th>Color</th>
                     </thead>
-                    <tr>
-                        <td>Gibson ES-335</td>
-                        <td>Electric</td>
-                        <td>25</td>
-                        <td>Red</td>
-                        <td className={style.flexCol}><Button type="primary" text="Update"/><br /><p>Delete</p></td>
-                    </tr>
-                    <tr>
-                        <td>Gibson ES-335</td>
-                        <td>Electric</td>
-                        <td>25</td>
-                        <td>Red</td>
-                        <td className={style.flexCol}><Button type="primary" text="Update"/><br /><p>Delete</p></td>
-                    </tr>
-                    <tr>
-                        <td>Gibson ES-335</td>
-                        <td>Electric</td>
-                        <td>25</td>
-                        <td>Red</td>
-                        <td className={style.flexCol}><Button type="primary" text="Update"/><br /><p>Delete</p></td>
-                    </tr>
-                    <tr>
-                        <td>Gibson ES-335</td>
-                        <td>Electric</td>
-                        <td>25</td>
-                        <td>Red</td>
-                        <td className={style.flexCol}><Button type="primary" text="Update"/><br /><p>Delete</p></td>
-                    </tr>
-                
+                    {products.map(i => (<tr>
+                      <td>{i.brand} {i.model}</td>
+                        <td>{i.type}</td>
+                        <td>{i.inStock}</td>
+                        <td>{props.color}</td>
+                        <td className={style.flexCol}><Button type="primary" onClick={update} text="Update"/><br /><p>Delete</p></td>
+                    </tr>))}
                 </table>
 
             </div>

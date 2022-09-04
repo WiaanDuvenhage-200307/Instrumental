@@ -21,32 +21,22 @@ const uploadProductImage = multer({storage: productImageStore});
 // This is where we will write our routes
 
 router.post('/api/addproduct', uploadProductImage.single('image'), (req, res) => {
-    let totalStock = req.body.availStock[0].qty + req.body.availStock[1].qty
+
+    let data = JSON.parse(req.body.information);
+
     const newProduct = new productSchema({
-        brand: req.body.brand,
-        model: req.body.model,
-        type: req.body.type,
-        price: +req.body.price,
-        discountPrice: +req.body.discountPrice,
-        inStock: totalStock,
-        desc: req.body.desc,
-        imgUrl: [
-            req.file.filename
-        ],
-        availStock: [
-            {
-                neckLength: +req.body.neckLength,
-                qty: req.body.availStock.qty,
-                handedness: req.body.handedness,
-                variations: [
-                    {
-                        colorOne: req.body.colorOne,
-                        colorTwo: req.body.colorTwo,
-                        colorThree: req.body.colorThree,
-                    }
-                ]
-            }
-        ]
+        brand: data.brand,
+        model: data.model,
+        type: data.type,
+        price: data.price,
+        inStock: data.inStock,
+        desc: data.desc,
+        productDetails: {
+          neckLength: data.productDetails.neckLength,
+          handedness: data.productDetails.handedness,
+          colors: [data.productDetails.colorOne, data.productDetails.colorTwo, data.productDetails.colorThree] 
+        },
+        image: req.file.filename
     });
 
     newProduct.save()

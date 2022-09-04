@@ -30,20 +30,25 @@ export default function InventoryManagement(props) {
         })
     }, [])
 
+    const addGuitar = () => {
+        setModal(<NewProductModal close={setModal}/>)
+    }
+
 
   return (
     <div className={style.container}>
         <Nav/>
-
         <div className={style.pageContent}>
             <div className={style.left}>
+                <h2 className={style.heading}>Our Inventory</h2>
+                <h4 className={style.subHeading}>Welcome to the Inventory Management Page</h4>
+                <div className={style.addButton} onClick={addGuitar}>Add Guitar+</div>
                 {inventory}
                 {modal}
             </div>
             <div className={style.right}>
                 <Chart/>
             </div>
-
         </div> 
     </div>
   )

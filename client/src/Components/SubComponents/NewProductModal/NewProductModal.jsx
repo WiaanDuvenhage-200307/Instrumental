@@ -62,6 +62,7 @@ export default function NewProductModal(props) {
         e.preventDefault();
 
         const payloadData = new FormData();
+        console.log(new FormData());
 
         let payload = {
             brand: values.brand,
@@ -71,20 +72,15 @@ export default function NewProductModal(props) {
             discountPrice: +values.discountPrice,
             inStock: +values.inStock,
             desc: values.desc,
-            availStock: [
-                {
-                    neckLength: values.neckLength,
-                    qty: +values.qty,
-                    handedness: values.handedness,
-                    variations: [
-                        {
-                            colorOne: values.colorOne,
-                            colorTwo: values.colorTwo,
-                            colorThree: values.colorThree,
-                        }
-                    ]
-                }
-            ]
+            availStock: {
+                neckLength: +values.neckLength,
+                handedness: values.handedness,
+                variations: [
+                    values.colorOne,
+                    values.colorTwo,
+                    values.colorThree
+                ]
+            }
         }
 
         payloadData.append('information', JSON.stringify(payload));
@@ -107,7 +103,7 @@ export default function NewProductModal(props) {
     <div className={style.container}>
     <div className={style.modal}>
         <h1>Add Guitar</h1>
-    <form className={style.form}>
+    <form className={style.form} onSubmit={addProduct}>
     <Input inputType="file" onChange={getImage}/>
         <p>{imageName}</p>
     <Input
@@ -122,40 +118,70 @@ export default function NewProductModal(props) {
         placeholder="Model"
         onChange={handleInputChange} 
     />
-        <Input
-            name="type"
-            value={values.type}
-            placeholder="Type"
-            onChange={handleInputChange} 
-        />
-        <Input
-            name="price"
-            value={values.price}
-            placeholder="Price"
-            onChange={handleInputChange} 
-        />
-        <Input
-            name="discountPrice"
-            value={values.discountPrice}
-            placeholder="Discount Price"
-            onChange={handleInputChange} 
-        />
-            <Input
-                name="inStock"
-                value={values.inStock}
-                placeholder="In Stock"
-                onChange={handleInputChange} 
-            />
-            <Input
-                name="desc"
-                value={values.desc}
-                placeholder="Description"
-                onChange={handleInputChange} 
-            />
-        <button className={style.updateBtn}>
-            <p className={style.btnText} onClick={addProduct}>Add Guitar</p>
-        </button>
-        <p onClick={closeModal}>Cancel</p>
+    <Input
+        name="type"
+        value={values.type}
+        placeholder="Type"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="price"
+        value={values.price}
+        placeholder="Price"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="discountPrice"
+        value={values.discountPrice}
+        placeholder="Discount Price"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="inStock"
+        value={values.inStock}
+        placeholder="In Stock"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="desc"
+        value={values.desc}
+        placeholder="Description"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="neckLength"
+        value={values.neckLength}
+        placeholder="Neck Length"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="handedness"
+        value={values.handedness}
+        placeholder="Handedness"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="colorOne"
+        value={values.colorOne}
+        placeholder="Color 1"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="colorTwo"
+        value={values.colorTwo}
+        placeholder="Color 2"
+        onChange={handleInputChange} 
+    />
+    <Input
+        name="colorThree"
+        value={values.colorThree}
+        placeholder="Color 3"
+        onChange={handleInputChange} 
+    />
+    <button className={style.updateBtn}>
+        <p className={style.btnText}>Add Guitar</p>
+    </button>
+    <p onClick={closeModal}>Cancel</p>
     </form>
     </div>    
     </div>

@@ -104,8 +104,8 @@ export default function IndividualProduct() {
                 <h3>{productData.productBrand} {productData.productModel}</h3>
                 <h4>{productData.productType}</h4>
                 <div className={style.flex}>
-                    <h3 className={style.oldPrice}>R{productData.productPrice}</h3>
-                    <h3 className={style.totalPrice}>R{productData.productDiscountPrice}</h3>
+                    { productData.productDiscountPrice ? <h3 className={style.oldPrice}>R{productData.productPrice}</h3> : <h3 className={style.totalPrice}>R{productData.productPrice}</h3>}
+                    { productData.productDiscountPrice ? <h3 className={style.totalPrice}>R{productData.productDiscountPrice}</h3> : ""}
                 </div>
                 <br />
                 <p className={style.aboutProductHeading}>About The Product</p>

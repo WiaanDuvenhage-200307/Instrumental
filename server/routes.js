@@ -6,9 +6,32 @@ const router = express();
 // This is where we will write our routes
 
 router.post('/api/addproduct', (req, res) => {
-
+    let totalStock = req.body.availStock[0].qty + req.body.availStock[1].qty
     const newProduct = new productSchema({
-
+        brand: req.body.brand,
+        model: req.body.model,
+        type: req.body.type,
+        price: +req.body.price,
+        discountPrice: +req.body.discountPrice,
+        inStock: totalStock,
+        desc: req.body.desc,
+        imgUrl: [
+            req.body.imgUrl[0]
+        ],
+        availStock: [
+            {
+                neckLength: +req.body.neckLength,
+                qty: req.body.availStock.qty,
+                handedness: req.body.handedness,
+                variations: [
+                    {
+                        colorOne: req.body.colorOne,
+                        colorTwo: req.body.colorTwo,
+                        colorThree: req.body.colorThree,
+                    }
+                ]
+            }
+        ]
     });
 
     newProduct.save()

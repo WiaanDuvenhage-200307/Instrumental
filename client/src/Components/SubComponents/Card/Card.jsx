@@ -26,8 +26,8 @@ export default function Card(props) {
             <div className={style.itemName}>
                 <h4>{props.brand} {props.model}</h4>
                 <div className={style.priceContainer}>
-                    <h4 className={style.prevPrice}>{props.price}</h4>
-                    <h4 className={style.discountPrice}>{props.discountPrice}</h4>
+                    { props.discountPrice ? <h4 className={style.prevPrice}>R{props.price}</h4> : <h4 className={style.discountPrice}>{props.discountPrice}</h4>}
+                    { props.discountPrice ? <h4 className={style.discountPrice}>R{props.discountPrice}</h4> : <h4 className={style.discountPrice}>R{props.price}</h4>}
                 </div>
 
             </div>

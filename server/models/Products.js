@@ -38,52 +38,17 @@ const productSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    productDetails: [
-        {
-            neckLength: {
-                type: Number,
-                required: true
-            },
-            qty: {
-                type: Number,
-                required: true
-            },
-            handedness: {
-                type: String,
-                required: true
-            },
-            variations: [
-                {                               
-                    color: Number
-                },
-                {                               
-                    color: Number
-                }                    
-            ]
+    productDetails: {
+        neckLength: {
+            type: Number,
+            required: true
         },
-        {
-            neckLength: {
-                type: Number,
-                required: true
-            },
-            qty: {
-                type: Number,
-                required: true
-            },
-            handedness: {
-                type: String,
-                required: true
-            },
-            variations: [
-                {                               
-                    color: Number
-                },
-                {                               
-                    color: Number
-                }                    
-            ]
-        }
-    ]   
+        handedness: {
+            type: String,
+            required: true
+        },
+        colors: Array
+    }  
 });
 
 module.exports = mongoose.model('products', productSchema);

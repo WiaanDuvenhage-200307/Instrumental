@@ -333,6 +333,73 @@
         "variations": [{ "black": 6, "brown": 10 }]
       }
     ]
+  },
+  {
+    "brand": "Gibson",
+    "model": "Les Paul Standard 50's",
+    "type": "Electric",
+    "price": 38300,
+    "inStock": 8,
+    "desc": "A modern expression of the solidbody electric guitar that started it all, Fender’s American Performer Stratocaster delivers the latest in US-made quality and value. The American Performer Stratocaster boasts a massive tonal range. A trio of Fender Yosemite single-coil pickups — with flat-staggered pole pieces to increase output — serve up classic Strat spank and sparkle, infused with gobs of sustain for soloing. A push-pull tone knob lets you add the neck pickup to any position, opening up a huge, extended tonal range. The second tone pot engages Fender’s Greasebucket master tone circuit, which rolls off highs without reducing gain. Not to be overshadowed by its innovative electronics, the American Performer Stratocaster, naturally, features the outstanding comfort and playability you expect from a Fender Strat.",
+    "imgUrl":[
+        "https://images.ctfassets.net/m8onsx4mm13s/11yLD2nnJYanRYcEHIvbu8/d7af425bee99e2bf7b9a40b747d3818f/__static.gibson.com_product-images_USA_USAUBC849_Heritage_Cherry_Sunburst_LPS519HSNH1_1.jpg?h=900",
+        "https://images.ctfassets.net/m8onsx4mm13s/7f4Ps4PVejSlsKj7HG9VJx/2d13a198d76e41c4f93643785dd17486/__static.gibson.com_product-images_USA_USAUBC849_Heritage_Cherry_Sunburst_LPS519HSNH1_2.jpg?h=900",
+        "https://images.ctfassets.net/m8onsx4mm13s/2bgXkcWszKl132vqwiWLjy/3d10bef2d131e23b781836662d0b7e2a/__static.gibson.com_product-images_USA_USAUBC849_Heritage_Cherry_Sunburst_LPS519HSNH1_4.jpg?h=900"
+    ],
+    "availStock": {
+      "neckLength": 863,
+      "handedness": "left",
+      "colors": ["black", "white", "ivory"] 
+    }
   }
+//   brand: {
+//     type: String,
+//     required: true
+// },
+// model: {
+//     type: String,
+//     required: true
+// },
+// type: {
+//     type: String,
+//     required: true
+// },
+// price: {
+//     type: Number,
+//     required: true
+// },
+// discount: {
+//     type: Number,
+//     required: true
+// },
+// discountPrice: {
+//     type: Number,
+//     required: true
+// },
+// inStock: {
+//     type: Number,
+//     required: true
+// },
+// desc: {
+//     type: String,
+//     required: true
+// },
+// imgUrl: Array,
+// date: {
+//     type: Date,
+//     default: Date.now
+// },
+// productDetails: {
+//     neckLength: {
+//         type: Number,
+//         required: true
+//     },
+//     handedness: {
+//         type: String,
+//         required: true
+//     },
+//     colors: Array
+// } 
+  
 
 ]

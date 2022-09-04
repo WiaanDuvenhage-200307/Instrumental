@@ -6,52 +6,43 @@ import { useEffect } from 'react';
 
 export default function UpdateModal(props) {
 
-    console.log(props);
+    const [run, setRun] = useState(false);
 
-    let editProductDetails = {
-        brand: props.brand, 
-        model: props.model, 
-        type: props.type, 
-        price: props.price, 
-        discountPrice: props.discountPrice,
-        inStock: props.inStock,
-        desc: props.desc
+    let editFormValues = {brand: props.brand, model: props.model, desc: props.desc, type: props.type, inStock: props.inStock};
+
+    const [editValues, setEditValues] = useState(editFormValues);
+
+    const updateValues = (e) =>{
+        const { name, value } = e.target;
+        setEditValues({ ...editValues, [name]: value });
+        console.log(editValues);
     }
-
-    const [editVal, setEditVal] = useState(editProductDetails);
-
-    const updateValues  = e => {
-        const {name, value} = e.target;
-        setEditVal({...editVal, [name]: value});
-        console.log(editVal);
-    
-    }
-
-    // const updateUser = e => {
-    //     e.preventDefault();
-    //     let userId = props.id;
-    //     let payload = editVal;
-    //     axios.patch('http://localhost:5000/api/updateuser/' + userId, payload)
-    //     .then( res => {
-    //         if(res){
-    //             console.log('user updated!');
-    //             props.close();
-    //             window.location.reload();
-    //         }
-    //     })
-    //     .catch(err => console.log(err));
-    // }
 
     const closeModal = () => {
         props.close();
     }
 
+    const updateGuitar = e => {
+        e.preventDefault();
+        let guitarId = props.id;
+        let payload = editValues;
+        console.log(payload);
+        axios.patch('http://localhost:5000/api/updateproduct/' + guitarId, payload)
+        .then( res => {
+            if(res){
+                console.log('user updated!');
+                props.close();
+                window.location.reload();
+            }
+        })
+        .catch(err => console.log(err));
+    }
 
   return (
-    <div className={style.container}>
+<div className={style.container}>
     <div className={style.modal}>
         <h1>Update Guitar</h1>
-    <form className={style.form}>
+    <form className={style.form} onSubmit={updateGuitar}>
         <div className={style.flex}>
     <Input
         name="brand"
@@ -109,5 +100,4 @@ export default function UpdateModal(props) {
     </form>
     </div>    
     </div>
-  )
-}
+)}

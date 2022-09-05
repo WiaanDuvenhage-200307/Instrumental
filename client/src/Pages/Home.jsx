@@ -62,11 +62,7 @@ export default function Home() {
         {
             modalOpen
             ?   <CartModal
-                    //We can retrieve the value from 
-                    // the Modal component that we passed into
-                    // the prop and store it in the useState created above
-                    // this value was false
-                closeTheModal={value /*false*/ => setModalOpen(value)}
+                closeTheModal={value => setModalOpen(value)}
             />
             : ''
         }

@@ -3,7 +3,6 @@ import Footer from '../Components/UI/Footer/Footer';
 import Nav from '../Components/UI/Nav/Nav';
 import style from './IndividualProduct.module.scss';
 import arrowLeft from '../Assets/icons/arrow-left.svg';
-import productImg from '../Assets/img/card-item.jpg';
 import { useNavigate } from 'react-router-dom';
 import Button from '../Components/UI/Button/Button';
 import minus from '../Assets/icons/minus.svg';
@@ -12,8 +11,11 @@ import ColorPicker from '../Components/SubComponents/ColorPicker/ColorPicker';
 import Pill from '../Components/UI/Pill/Pill';
 import { useEffect } from 'react';
 import axios from 'axios';
+import CartModal from '../Components/SubComponents/CartModal/CartModal';
 
 export default function IndividualProduct() {
+
+    const [ modalOpen, setModalOpen ] = useState(false);
 
     const navigate = useNavigate();
 
@@ -57,7 +59,14 @@ export default function IndividualProduct() {
 
   return (
     <div className={style.container}>
-        <Nav/>
+        <Nav openTheModal={value /*true*/ => setModalOpen(value)}/>
+        {
+            modalOpen
+            ?   <CartModal
+                closeTheModal={value => setModalOpen(value)}
+            />
+            : ''
+        }
 
         <div className={style.pageContent}>
 

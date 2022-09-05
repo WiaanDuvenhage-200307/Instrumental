@@ -1,31 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import style from './NewProductModal.module.scss';
 import Input from '../../UI/Input/Input';
 
 export default function NewProductModal(props) {
 
-    const [productInfo, setProductInfo] = useState({
-        brand: "",
-        model: "",
-        type: "",
-        price: "",
-        discountPrice: "",
-        inStock: "",
-        desc: "",
-        imgUrl: "",
-        neckLength: "",
-        qty: "",
-        handedness: "",
-        colorOne: "",
-        colorTwo: "",
-        colorThree: "",
-    });
+    const defValues = ["brand", "model", "type", "price", "discountPrice", "inStock", "desc", "neckLength", "handedness", "colorOne", "colorTwo", "colorThree"] 
 
     const [imageName, setImageName] = useState("Image name will appear here");
     const [productImage, setProductImage] = useState();
 
-    const [values, setValues] = useState(productInfo);
+    const [values, setValues] = useState(defValues);
 
     const [updateUsers, setUpdateUsers] = useState(false);
 
@@ -62,23 +47,22 @@ export default function NewProductModal(props) {
         e.preventDefault();
 
         const payloadData = new FormData();
-        console.log(new FormData());
 
         let payload = {
-            brand: values.brand,
-            model: values.model,
-            type: values.type,
-            price: +values.price,
-            discountPrice: +values.discountPrice,
-            inStock: +values.inStock,
-            desc: values.desc,
-            availStock: {
-                neckLength: +values.neckLength,
-                handedness: values.handedness,
+            brand: values["brand"],
+            model: values["model"],
+            type: values["type"],
+            price: +values["price"],
+            discountPrice: +values["discountPrice"],
+            inStock: +values["inStock"],
+            desc: values["desc"],
+            productDetails: {
+                neckLength: +values["neckLength"],
+                handedness: values["handedness"],
                 variations: [
-                    values.colorOne,
-                    values.colorTwo,
-                    values.colorThree
+                    values["colorOne"],
+                    values["colorTwo"],
+                    values["colorThree"]
                 ]
             }
         }

@@ -2,18 +2,18 @@ import React, {useEffect} from 'react';
 import ProductCard from '../Components/SubComponents/ProductCard/ProductCard';
 import Nav from '../Components/UI/Nav/Nav';
 import style from './ProductPage.module.scss';
-import headerImg from '../Assets/img/guitar.png';
 import FilterCard from '../Components/SubComponents/FilterCard/FilterCard';
 import Footer from '../Components/UI/Footer/Footer';
 import Filter from '../Components/SubComponents/Filter/Filter';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
+import CartModal from '../Components/SubComponents/CartModal/CartModal';
 
 export default function ProductPage() {
 
-    const [products, setProducts] = useState();
+    const [ modalOpen, setModalOpen ] = useState(false);
 
+    const [products, setProducts] = useState();
 
     useEffect(() =>{
         document.title = "Instrumental | Our Products"
@@ -33,7 +33,14 @@ export default function ProductPage() {
 
   return (
     <div className={style.container}>
-        <Nav/>
+        <Nav openTheModal={value /*true*/ => setModalOpen(value)}/>
+        {
+            modalOpen
+            ?   <CartModal
+                closeTheModal={value => setModalOpen(value)}
+            />
+            : ''
+        }
             <header>
                 <div className={style.overlay}>
 

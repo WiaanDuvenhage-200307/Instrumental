@@ -33,7 +33,7 @@ const productSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    imgUrl: Array,
+    // imgUrl: Array,
     date: {
         type: Date,
         default: Date.now
@@ -48,6 +48,10 @@ const productSchema = mongoose.Schema({
             required: true
         },
         colors: Array
+    },
+    image:{
+        type: String,
+        required: false
     }  
 });
 

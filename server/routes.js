@@ -35,8 +35,7 @@ router.post('/api/addproduct', uploadProductImage.single('image'), (req, res) =>
           neckLength: data.productDetails.neckLength,
           handedness: data.productDetails.handedness,
           colors: [data.productDetails.colorOne, data.productDetails.colorTwo, data.productDetails.colorThree] 
-        },
-        image: req.file.filename
+        }
     });
 
     newProduct.save()

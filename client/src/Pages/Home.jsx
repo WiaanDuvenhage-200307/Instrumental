@@ -12,7 +12,7 @@ import CartModal from '../Components/SubComponents/CartModal/CartModal';
 import chevLeft from '../Assets/icons/goLeft.svg';
 import chevRight from '../Assets/icons/goRight.svg';
 
-export default function Home() {
+export default function Home(props) {
 
     const [ modalOpen, setModalOpen ] = useState(false);
 
@@ -49,20 +49,21 @@ export default function Home() {
         .then(res => {
             let productData = res.data;
             console.log(productData);
-            let renderProducts = productData.map(i => <Card key={i._id} productId={i._id} brand={i.brand} model={i.model} price={i.price} discountPrice={i.discountPrice} imgUrl={i.imgUrl[0]}/>)
+            let renderProducts = productData.map(i => <Card key={i._id} productId={i._id} brand={i.brand} model={i.model} price={i.price} discountPrice={i.discountPrice} imgUrl={i.imgUrl[0]} qty={i.inStock}/>)
             setProducts(renderProducts);
             console.log(products);
         })
         .catch(err => console.log(err))
     }, [])
 
+
   return (
     <div className={style.page}>
         <Nav openTheModal={value /*true*/ => setModalOpen(value)}/>
         {
             modalOpen
-            ?   <CartModal
-                closeTheModal={value => setModalOpen(value)}
+            ?   <CartModal rerender={props.rerender} setRerender={props.setRerender}
+                closeTheModal={value => setModalOpen(value)} 
             />
             : ''
         }

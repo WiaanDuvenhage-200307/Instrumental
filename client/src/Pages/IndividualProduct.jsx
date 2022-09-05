@@ -12,8 +12,9 @@ import Pill from '../Components/UI/Pill/Pill';
 import { useEffect } from 'react';
 import axios from 'axios';
 import CartModal from '../Components/SubComponents/CartModal/CartModal';
+import { useRef } from 'react';
 
-export default function IndividualProduct() {
+export default function IndividualProduct(props) {
 
     const [ modalOpen, setModalOpen ] = useState(false);
 
@@ -21,11 +22,61 @@ export default function IndividualProduct() {
 
     const [qty, setQty] = useState(1);
 
+    const productAmount = useRef();
+
     let productId = sessionStorage.getItem("productId");
     console.log(productId);
 
     const addToCart = () => {
-        alert("Gibson ES-335 has been added to cart!");
+
+        let checkUser = sessionStorage.getItem("currentUser"); 
+        let checkCart = sessionStorage.getItem("cartItems");
+        let cartArr = [];
+    
+        if(!sessionStorage.getItem("currentUser")){
+            navigate('/login')
+        }else{
+            console.log("user logged in");
+    
+            if(checkCart.length === 0){
+            let cartData = {
+                id: productData.productId,
+                brand: productData.productBrand,
+                model: productData.productModel,
+                user: checkUser,
+                price: productData.productPrice,
+                discountPrice: productData.discountPrice,
+                img: productData.productImg,
+                qty: qty
+                // color: ,
+            }
+        
+            cartArr.push(cartData);
+        
+            sessionStorage.setItem('cartItems', JSON.stringify(cartArr));
+            } else{
+            let parsedData = JSON.parse(checkCart);
+    
+            let cartData = {
+                id: productData.productId,
+                brand: productData.productBrand,
+                model: productData.productModel,
+                user: checkUser,
+                price: productData.productPrice,
+                discountPrice: productData.discountPrice,
+                img: productData.productImg,
+                qty: qty
+                // color: ,
+            }
+    
+            parsedData.push(cartData);
+    
+            sessionStorage.setItem('cartItems', JSON.stringify(parsedData));
+            console.log(cartData);
+            }
+            props.setRerender(true);
+
+        }
     }
 
     const [productData, setProductData] = useState({
@@ -43,6 +94,7 @@ export default function IndividualProduct() {
         axios.get('http://localhost:5000/api/oneproduct/' + productId)
         .then(res => {
             let data = res.data;
+            console.log(data);
             setProductData({
                 productBrand: data.brand,
                 productModel: data.model,
@@ -51,15 +103,19 @@ export default function IndividualProduct() {
                 productPrice: data.price,
                 productInStock: data.inStock,
                 productDesc: data.desc,
-                productImg: data.imgUrl[0]
+                productImg: data.imgUrl[0],
+                productHandedness: data.productDetails.handedness,
+                productNeckLength: data.productDetails.neckLength
             })
+
+            console.log(productData);
 
         })
     }, [])
 
   return (
     <div className={style.container}>
-        <Nav openTheModal={value /*true*/ => setModalOpen(value)}/>
+        <Nav rerender={props.rerender} setRerender={props.rerender} openTheModal={value /*true*/ => setModalOpen(value)}/>
         {
             modalOpen
             ?   <CartModal
@@ -83,7 +139,7 @@ export default function IndividualProduct() {
                     <img src={productData.productImg}/>
                 </div>
                 <br />
-                <p className={style.lowStock}>Only 2 Left!</p>
+                {productData.productInStock < 10 ? <p className={style.lowStock}>Only {productData.productInStock} Left!</p> : ""}
                 <hr />
                 <p className={style.pBlue}>Quantity</p>
                 <div className={style.flex}>
@@ -124,20 +180,12 @@ export default function IndividualProduct() {
                  <br />
                  <div className={style.flexDesc}>
                     <div className={style.column}>
-                        <h3>335</h3>
-                        <h4 className={style.pBlue}>Body Shape</h4>
+                        <h3>{productData.productNeckLength}mm</h3>
+                        <h4 className={style.pBlue}>Neck Length</h4>
                     </div>
                     <div className={style.column}>
-                        <h3>Mahogany</h3>
-                        <h4 className={style.pBlue}>Neck Material</h4>
-                    </div>
-                    <div className={style.column}>
-                        <h3>22</h3>
-                        <h4 className={style.pBlue}>Frets</h4>
-                    </div>
-                    <div className={style.column}>
-                        <h3>Gold</h3>
-                        <h4 className={style.pBlue}>Strings</h4>
+                        <h3>{productData.productHandedness}</h3>
+                        <h4 className={style.pBlue}>Handedness</h4>
                     </div>
 
                  </div>

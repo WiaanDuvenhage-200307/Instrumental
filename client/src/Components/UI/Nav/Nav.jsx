@@ -16,24 +16,15 @@ export default function Nav( props ) {
 
     const open = () => {
         props.openTheModal(true);
-        console.log("Clciked");
+    }
+
+    const close = () => {
+        props.openTheModal(false);
     }
 
     useEffect(() => {
         let currUser = sessionStorage.getItem('currentUser');
         let adminCheck = sessionStorage.getItem('admin');
-
-        // if(currUser){
-        //     if(currUser === "Kelvin"){
-        //         setAdmin(false);
-        //         setUser(true);
-        //         setName("Admin");
-        //     }else{
-        //         setUser(true);
-        //         setAdmin(false);
-        //         setName(currUser)
-        //     }
-        // }
 
         if(currUser === '' || currUser === null || currUser === undefined){
             console.log(true);
@@ -81,7 +72,7 @@ export default function Nav( props ) {
             <p>{name}</p>
             <div onClick={logOut} className={style.logOut}>Log Out</div>
         </div>
-        <img className={style.cart} src={cart} width={25} onClick={open}/>
+        <img className={style.cart} src={cart} width={25} onMouseEnter={open}/>
     </div>
   )
 }

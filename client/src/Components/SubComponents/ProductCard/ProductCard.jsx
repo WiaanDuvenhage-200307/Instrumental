@@ -13,6 +13,56 @@ export default function ProductCard(props) {
     navigate('/individual-product');
   }
 
+  const addToCart = () => {
+
+    let checkUser = sessionStorage.getItem("currentUser"); 
+    let checkCart = sessionStorage.getItem("cartItems");
+    let cartArr = [];
+    if(!sessionStorage.getItem("currentUser")){
+      navigate('/login')
+    }else{
+
+      console.log("user logged in");
+
+      if(checkCart === null || checkCart === undefined){
+        let cartData = {
+          brand: props.brand,
+          model: props.model,
+          id: props.productId,
+          user: checkUser,
+          price: props.price,
+          discountPrice: props.discountPrice,
+          img: props.img,
+          qty: 1
+          // color: ,
+        }
+  
+        cartArr.push(cartData);
+  
+        sessionStorage.setItem('cartItems', JSON.stringify(cartArr));
+      } else{
+        let parsedData = JSON.parse(checkCart);
+
+        let cartData = {
+          brand: props.brand,
+          model: props.model,
+          id: props.productId,
+          user: checkUser,
+          price: props.price,
+          discountPrice: props.discountPrice,
+          img: props.img,
+          qty: 1
+          // color: ,
+        }
+
+        parsedData.push(cartData);
+
+        sessionStorage.setItem('cartItems', JSON.stringify(parsedData));
+      }
+      props.setRerender(true);
+    }
+  }
+
   return (
     <div className={style.container}>
         <div className={style.imgContainer}>
@@ -20,9 +70,11 @@ export default function ProductCard(props) {
         </div>
         <div className={style.descContainer}>
             <h5>{props.brand} {props.model}</h5>
-            <p>R{props.price}</p>
+            { props.discountPrice ? <h4 className={style.prevPrice}>R{props.price}</h4> : <h4 className={style.discountPrice}>{props.discountPrice}</h4>}
+            { props.discountPrice ? <h4 className={style.discountPrice}>R{props.discountPrice}</h4> : <h4 className={style.discountPrice}>R{props.price}</h4>}
         </div>
-        <Button text="view more" type="secondary" onClick={goToGuitar}/>
+        <Button text="Add to Cart" type="secondary" onClick={addToCart}/>
+        <Button text="view more" type="tersiary" onClick={goToGuitar}/>
     </div>
   )
 }

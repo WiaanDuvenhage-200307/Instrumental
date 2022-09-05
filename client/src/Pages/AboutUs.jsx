@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import Nav from '../Components/UI/Nav/Nav';
 import style from './AboutUs.module.scss';
+import comingSoon from '../Assets/coming-soon.svg';
 
 export default function AboutUs() {
 
@@ -11,7 +12,11 @@ export default function AboutUs() {
   return (
     <div className={style.container}>
         <Nav/>
-        <h2>This is the About Us Page</h2>
+        <div className={style.pageContent}>
+        <img src={comingSoon} width={300}/>
+        <h2>Coming Soon!</h2><span>(catching bugs)</span>
+        </div>
+
     </div>
   )
 }

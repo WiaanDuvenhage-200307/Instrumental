@@ -261,3 +261,4 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 - [(w3schools) SQL SELECT Statement](https://www.w3schools.com/sql/sql_select.asp)
 - [Leander van Aarde](https://github.com/LeandervanAarde)
 - [Vian Du Plessis](https://github.com/Vian-du-Plessis)
+- [Reinhardt de Beer](https://github.com/EpicBlue1)

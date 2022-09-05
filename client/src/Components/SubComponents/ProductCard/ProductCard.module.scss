@@ -46,4 +46,14 @@
         color: $blue;
         font-weight: $font-weight-bold;
     }
+
+    .prevPrice{
+        text-decoration: line-through;
+        opacity: 0.5;
+        color: $blue;
+    }
+
+    .discountPrice{
+        color: $blue;
+    }
 }

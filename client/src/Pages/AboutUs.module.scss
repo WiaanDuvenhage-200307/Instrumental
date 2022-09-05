@@ -5,4 +5,12 @@
     h2{
         color: $blue;
     }
+    .pageContent{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        height: 85vh;
+    }
 }

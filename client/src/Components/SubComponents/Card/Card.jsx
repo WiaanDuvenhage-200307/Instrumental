@@ -14,10 +14,53 @@ export default function Card(props) {
     }
 
     const addToCart = () => {
-        if(!sessionStorage.getItem("user")){
+
+        let checkUser = sessionStorage.getItem("currentUser"); 
+        let checkCart = sessionStorage.getItem("cartItems");
+        let cartArr = [];
+    
+        if(!sessionStorage.getItem("currentUser")){
             navigate('/login')
         }else{
-            // Add to the cart
+            console.log("user logged in");
+    
+            if(checkCart.length == 0){
+            let cartData = {
+                id: props.id,
+                brand: props.brand,
+                model: props.model,
+                user: checkUser,
+                price: props.price,
+                discountPrice: props.discountPrice,
+                img: props.imgUrl,
+                qty: 1
+                // color: ,
+            }
+        
+            cartArr.push(cartData);
+        
+            sessionStorage.setItem('cartItems', JSON.stringify(cartArr));
+            } else{
+            let parsedData = JSON.parse(checkCart);
+    
+            let cartData = {
+                id: props.id,
+                brand: props.brand,
+                model: props.model,
+                user: checkUser,
+                price: props.price,
+                discountPrice: props.discountPrice,
+                img: props.imgUrl,
+                qty: 1
+                // color: ,
+            }
+    
+            parsedData.push(cartData);
+    
+            sessionStorage.setItem('cartItems', JSON.stringify(parsedData));
+            console.log(cartData);
+            }
+
         }
     }
 
@@ -25,7 +68,7 @@ export default function Card(props) {
     <div className={style.cardContainer}>
 
         <div className={style.imgContainer}>
-            <p className={style.stockWarning}>5 Left</p>
+            {props.qty < 10 ? <p className={style.stockWarning}>{props.qty} Left</p> : ""}
             <img src={props.imgUrl}/>
         </div>
 

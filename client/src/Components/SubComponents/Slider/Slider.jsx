@@ -11,11 +11,9 @@ export default function Slider() {
     const img = images.map(item => item.url);
     const sliderText = images.map(item => item.text);
     const subText = images.map(item => item.subText);
-    console.log(img);
 
 
     useEffect(() => {
-      console.log(sliderImages);
       const timer = setTimeout(() => {
         image === img.length - 1 ? setImage(0) : setImage(image + 1)
       }, 5000);

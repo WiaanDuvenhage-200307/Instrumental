@@ -24,29 +24,8 @@ export default function NewProductModal(props) {
         console.log(values);
     };
 
-    const getImage = (e) => {
-        // This is where Multer comes in
-      
-        let imageFile = e.target.files[0];
-        setProductImage(imageFile);
-      
-        let value = e.target.value;
-        let imgName = value.substring(12);
-        setImageName(imgName);
-      
-        let reader = new FileReader();
-        reader.onload = () => {
-          let output = document.getElementById('imgPrev');
-        };
-      
-        reader.readAsDataURL(e.target.files[0]);
-      
-    }
-
     const addProduct = (e) => {
         e.preventDefault();
-
-        const payloadData = new FormData();
 
         let payload = {
             brand: values["brand"],
@@ -60,7 +39,7 @@ export default function NewProductModal(props) {
             productDetails: {
                 neckLength: +values["neckLength"],
                 handedness: values["handedness"],
-                variations: [
+                colors: [
                     values["colorOne"],
                     values["colorTwo"],
                     values["colorThree"]
@@ -86,11 +65,8 @@ export default function NewProductModal(props) {
     <div className={style.modal}>
         <h1>Add Guitar</h1>
     <form className={style.form} onSubmit={addProduct}>
-    <Input inputType="file" onChange={getImage}/>
-        <p>{imageName}</p>
     <Input
         name="brand"
-        value={values.brand}
         placeholder="Brand"
         onChange={handleInputChange} 
     />
@@ -126,7 +102,7 @@ export default function NewProductModal(props) {
     />
     <Input
     name="imgUrl"
-    placeholder="Description"
+    placeholder="Input Img Url"
     onChange={handleInputChange} 
     />
     <Input

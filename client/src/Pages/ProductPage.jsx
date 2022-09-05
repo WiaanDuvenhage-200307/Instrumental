@@ -9,7 +9,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import CartModal from '../Components/SubComponents/CartModal/CartModal';
 
-export default function ProductPage() {
+export default function ProductPage(props) {
 
     const [ modalOpen, setModalOpen ] = useState(false);
 
@@ -24,7 +24,7 @@ export default function ProductPage() {
         .then(res => {
             let productData = res.data;
             console.log(productData);
-            let renderProducts = productData.map(i => <ProductCard key={i._id} productId={i._id} brand={i.brand} model={i.model} price={i.price} img={i.imgUrl[0]}/>)
+            let renderProducts = productData.map(i => <ProductCard key={i._id} productId={i._id} brand={i.brand} model={i.model} price={i.price} discountPrice={i.discountPrice} img={i.imgUrl[0]} setRerender={props.setRerender}/>)
             setProducts(renderProducts);
             console.log(products);
         })
@@ -36,7 +36,7 @@ export default function ProductPage() {
         <Nav openTheModal={value /*true*/ => setModalOpen(value)}/>
         {
             modalOpen
-            ?   <CartModal
+            ?   <CartModal rerender={props.rerender} setRerender={props.setRerender}
                 closeTheModal={value => setModalOpen(value)}
             />
             : ''

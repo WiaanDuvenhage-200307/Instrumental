@@ -4,8 +4,28 @@ import style from './Checkout.module.scss';
 import img from '../Assets/img/acoustic-1.jpg';
 import trash from '../Assets/icons/trash.svg';
 import Payment from '../Components/SubComponents/Payment/Payment';
+import CheckoutItem from '../Components/SubComponents/CheckoutItem/CheckoutItem';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
-export default function Checkout() {
+export default function Checkout(props) {
+
+    const [cartProduct, setCartProduct] = useState();
+
+    useEffect(() => {
+        let cartItems = sessionStorage.getItem("cartItems");
+        console.log(sessionStorage.getItem("cartItems"));
+        if(cartItems === undefined || cartItems === null){
+
+        }else{
+            cartItems = JSON.parse(cartItems);
+            console.log(cartItems);
+            let cartProduct = cartItems.map(i => <CheckoutItem  id={i.id} brand={i.brand} model={i.model} qty={i.qty} price={i.price} discountPrice={i.discountPrice} img={i.img}/>)
+            setCartProduct(cartProduct);
+        }
+       
+    }, [props.rerender])
+
   return (
     <div className={style.container}>
         <Nav/>
@@ -18,17 +38,9 @@ export default function Checkout() {
                         <th>Product</th>
                         <th>Product Name</th>
                         <th>Qty</th>
-                        <th>Color</th>
                         <th>Total</th>
                     </thead>
-                    <tr>
-                        <td className={style.productImg}><img src={img} width={150}/></td>
-                        <td>Gibson ES-335</td>
-                        <td>1</td>
-                        <td>Red</td>
-                        <td>R35 000</td>
-                        <td><img src={trash}/></td>
-                    </tr>
+                    {cartProduct}
                 </table>
             </div>
             <div className={style.right}>

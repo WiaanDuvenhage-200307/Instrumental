@@ -19,7 +19,7 @@ const productSchema = mongoose.Schema({
     },
     discountPrice: {
         type: Number,
-        required: true
+        required: false
     },
     inStock: {
         type: Number,

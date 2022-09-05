@@ -5,6 +5,7 @@ import bgImg from '../Assets/img/bg-img.jpg';
 import Input from '../Components/UI/Input/Input';
 import Button from '../Components/UI/Button/Button';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 export default function Login() {
 
@@ -30,8 +31,8 @@ export default function Login() {
     const handleForm = () => {
 
         let payload = {
-            email: values.email,
-            password: values.password
+            email: emailInput.current.value,
+            password: passwordInput.current.value
         }
 
         let mailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -45,10 +46,28 @@ export default function Login() {
             setEmailWarn('Enter an email');
             setPasswordWarn('Enter a password');
         }else {
-            setEmailWarn('');
-            setPasswordWarn('');
-            navigate('/')
+            axios.post('http://localhost:5000/api/loginuser', payload)
+            .then(res => {
+                if(res.data.user){
+                    sessionStorage.setItem('admin', res.data.findUser.admin)
+                    sessionStorage.setItem('currentUser', res.data.findUser.name)
+                    if(sessionStorage.getItem('admin') === "true"){
+                        navigate('/inventory-management') 
+                    } else{
+                        navigate('/')
+                    }
+
+                }else{
+                    setEmailWarn('Incorrect credential');
+                    setPasswordWarn('Incorrect credential');
+                }
+
+
+            })
+            .catch(err => console.log(err));
         }
+
+
 
 
     }
@@ -72,7 +91,7 @@ export default function Login() {
                     type="primary"
                     value={values["email"]}
                     ref={ emailInput }
-                    onChange={handleInputChange}
+                    // onChange={handleInputChange}
                 />
                 <p className={style.emailWarn}>{emailWarn}</p>
             </div>
@@ -85,7 +104,6 @@ export default function Login() {
                     type="primary"
                     value={values["password"]}
                     ref={ passwordInput }
-                    onChange={handleInputChange}
                 />
                 <p className={style.passwordWarn}>{passwordWarn}</p>
             </div>

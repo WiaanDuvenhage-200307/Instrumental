@@ -78,17 +78,16 @@ router.post('/api/loginuser',async (req, res) =>{
     });
 
     if(findUser){
-        if(await bcrypt.compare(req.body.password, findUser.password)){
-            console.log(findUser)
-            return res.json(findUser)
-        } else{
-            console.log("there was an error")
-            return res.json(false)
+        // check to see if password matches
+        if(await req.body.password === findUser.password){
+           res.json({user : true, findUser: findUser});
+        }else{
+            res.json({user: false}); 
         }
-    
-    } else{
-        res.json(false)
+    }else{
+       res.json({msg: "User Not Found"});
     }
+    
 
 });
 

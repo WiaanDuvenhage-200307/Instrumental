@@ -1,59 +1,58 @@
-<!-- REPLACE ALL THE [WiaanDuvenhage-200307] TEXT WITH YOUR GITHUB PROFILE NAME & THE [Instrumental] WITH THE NAME OF YOUR GITHUB PROJECT -->
 
-<!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/WiaanDuvenhage-200307/Instrumental)
-![GitHub watchers](https://img.shields.io/github/watchers/WiaanDuvenhage-200307/Instrumental)
-![GitHub language count](https://img.shields.io/github/languages/count/WiaanDuvenhage-200307/Instrumental)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/WiaanDuvenhage-200307/Instrumental)
+![GitHub repo size](https://img.shields.io/github/repo-size/WiaanDuvenhage-200307/instrumental?color=lightblue)
+![GitHub watchers](https://img.shields.io/github/watchers/WiaanDuvenhage-200307/instrumental?color=lightblue)
+![GitHub language count](https://img.shields.io/github/languages/count/WiaanDuvenhage-200307/instrumental?color=lightblue)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/WiaanDuvenhage-200307/instrumental?color=lightblue)
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Instagram][instagram-shield]][instagram-url]
 
-<!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Wiaan Duvenhage</h5>
 <h5 align="center" style="padding:0;margin:0;">200307</h5>
 <h6 align="center">DV200 | Term 3</h6>
 </br>
 <p align="center">
 
-  <a href="https://github.com/WiaanDuvenhage-200307/Instrumental">
-    <img src="client/src/Assets/logo-light.svg" alt="Logo" width="100px">
+  <a href="https://github.com/WiaanDuvenhage-200307/instrumental">
+    <img src="Images/instrumentallogo.png" width="100px">
   </a>
-  
-  <h3 align="center">Instrumental</h3>
+
+<h3 align="center">Instrumenral</h3>
 
   <p align="center">
-    A React project built with MongoDB, Express, React & Node .<br>
-    
+    An Android Application built with Kotlin, that quizzes users on their esports knowledge.<br>
+
    <br />
    <br />
-   <a href="https://youtu.be/Oag-DdqW9jA">View Demo</a>
+   <a href="https://youtu.be/aY9cDdwKBnE">View Demo</a>
     ·
-    <a href="https://github.com/WiaanDuvenhage-200307/Instrumental/issues">Report Bug</a>
+    <a href="https://github.com/WiaanDuvenhage-200307/instrumental/issues">Report Bug</a>
     ·
-    <a href="https://github.com/WiaanDuvenhage-200307/Instrumental/issues">Request Feature</a>
+    <a href="https://github.com/WiaanDuvenhage-200307/instrumental/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
 
 - [About the Project](#about-the-project)
-  - [Project Description](#project-description)
-  - [Built With](#built-with)
+    - [Project Description](#project-description)
+    - [Built With](#built-with)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [How to install](#how-to-install)
+    - [Prerequisites](#prerequisites)
+    - [How to install](#how-to-install)
 - [Features and Functionality](#features-and-functionality)
 - [Concept Process](#concept-process)
-  - [Ideation](#ideation)
-  - [Wireframes](#wireframes)
+    - [Ideation](#ideation)
+    - [Wireframes](#wireframes)
 - [Development Process](#development-process)
-  - [Implementation Process](#implementation-process)
-    - [Highlights](#highlights)
-    - [Challenges](#challenges)
-  - [Future Implementation](#peer-reviews)
+    - [Implementation Process](#implementation-process)
+        - [Highlights](#highlights)
+        - [Challenges](#challenges)
+    - [Future Implementation](#peer-reviews)
 - [Final Outcome](#final-outcome)
-  - [Mockups](#mockups)
-  - [Video Demonstration](#video-demonstration)
+    - [Mockups](#mockups)
+    - [Video Demonstration](#video-demonstration)
 - [Conclusion](#conclusion)
 - [License](#license)
 - [Contact](#contact)
@@ -65,49 +64,36 @@
 
 <!-- header image of project -->
 
-![image1](src/components/assets/Mockup3.jpg)
+![image1][image1]
 
 ### Project Description
 
-Welcome to Instrumental! This is a receptionists management portal that I built using React, PHP & MySQL. It is a CRUD-system that can create, read, update & delete.
+This is instrumental! A simple quiz app that quizzes users on their knowledge on all types of esports around the world from veteran esports like Counter Strike all the way to new games entering the esports scene like Valorant. This is a fun app that friends can download to see who can get the highest score and ultimately gain instrumental (einstrumentalerience). People of all ages can play this game, it just has one requirement, be on top of your esports game.
 
 ### Built With
-
-- [React](https://reactjs.org/)
-- [PHP](https://www.php.net/)
-- [MySQL](https://www.mysql.com/)
-- [MAMP for Windows](https://www.mamp.info/en/windows/)
-- [tailwindcss](https://tailwindcss.com/)
+[<img src="https://www.svgrepo.com/show/331488/mongodb.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=gs_emea_south_africa_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624560&adgroup=115749711783)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/512px-Kotlin_Icon.svg.png?20171012085709" width="4%" height="4%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://kotlinlang.org/)
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
 
 ## Getting Started
 
-The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+For development, the latest version of Android Studio is required. The latest version can be downloaded from [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjwuYWSBhByEiwAKd_n_q4WXi5vcCji08peoWOEsv-KHFT7QWNZNmozB_CIiiSNl_HOUL-1JBoCGx8QAvD_BwE&gclsrc=aw.ds)
 
 ### Installation
 
-Here are a couple of ways to clone this repo:
+1. Clone the repo
+```sh
+git clone https://github.com/WiaanDuvenhage-200307/instrumental.git
+```
+2. Open the project
 
-1.  GitHub Desktop </br>
-    Enter `https://github.com/WiaanDuvenhage-200307/Instrumental.git` into the URL field and press the `Clone` button.
-
-2.  Clone Repository </br>
-    Run the following in the command-line to clone the project:
-
-    ```sh
-    git clone https://github.com/WiaanDuvenhage-200307/Instrumental.git
-    ```
-
-        Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
-
-3.  Install Dependencies </br>
-    Run the following in the command-line to install all the required dependencies:
-
-    ```sh
-    npm install
-    ```
+Use `File` : `Open` in Android Studio.
 
 <!-- FEATURES AND FUNCTIONALITY-->
 <!-- You can add the links to all of your imagery at the bottom of the file as references -->
@@ -116,79 +102,85 @@ Here are a couple of ways to clone this repo:
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 
-### Adding an Appointment
+### Entering your username
 
-![image5](src/components/assets/Function1.jpg)
-The receptionist can add an appointment by assigning a patient to a doctor. They can add the name, date and time and it will display on the page when the page auto-refreshes.
+![image2][image2]
+Enter your name to start with the quiz. This name can be changed if you would want to.
 
-### Scroll Through Calendar
+### Choose a category
 
-![image6](src/components/assets/Function2.jpg)
-The receptionist can scroll through the calendar to see which date falls on which day, the receptionist can go forward or backward in time using the arrows underneath the month's name.
+![image3][image3]
+Select a category of the esports game that you wanted to get tested in, by tapping on the image tiles below.
 
-### Add Doctor/Patient
+### Answer Quiz Questions
 
-![image7](src/assets/Function3.jpg)
-The receptionist can add a new doctor or patient's information into the modal and it will push to the database and display on the page after it refreshes. 
+![image4][image4]
+Answer the question given to the user on screen by tapping on the red buttons below and your score will be updated depending if you got the quiz question correct
 
-### Only Head Receptionist can add
-![image8](src/components/assets/Function4.jpg)
-![image10](src/components/assets/Function4-1.jpg)
-The head receptionist is the only one authorized to add, delete or update appointments, patients & doctors
+### Display Score
+![image5][image5]
+After the user has completed the categories' questions, they can view their score for that category and if they have broken or set a high score they will have a more flared up screen indicating so.
+
+### Show & Reset High Score
+![image6][image6]
+The user can view their high score as well as reset it in the settings page
 
 <!-- CONCEPT PROCESS -->
-<!-- Briefly explain your concept ideation process -->
+<!-- Briefly einstrumentallain your concept ideation process -->
 <!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 
 ## Concept Process
 
-It was very evident that blue is something that is very evident when designing dashboards or management portals for medical firms. So it is the route that I decided to go with Instrumental, I tried keeping it clean with different hue's of blue and some accents of a lime green.
+I am a very huge fan of dark theme applications and using colors that contrast extremely well, so in conclusion I thought it was a no-brainer to use in black, white and red in conjunction with each other to create the most eye-catching application. By looking at my wireframes you would notice that my answering method differs from the final application outcome. I have come to realise how intricate and dense Kotlin can be so decided to go with a more simpler, yet effective answering method.
 
 ### Wireframes
 
-![image9](src/components/assets/wireframe-dash.png)
-![image11](src/components/assets/wireframe-doctors.png)
-![image12](src/components/assets/wireframe-signup.png)
+![image7][image7]
+
+### Moodboard
+![image8][image8]
+
+### User Flow
+![image9][image9]
 
 ## Development Process
 
-The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application.
+The `Development Process` is the technical implementations and functionality done for the app.
 
 ### Implementation Process
 
-- I used `npx create-react app` to create this React project. I implemented component-based development instead of classes. By doing this, I will be able to easily inject and eject components and sub-components into my project, making it refactorable and reusable instead of writing up classes I have to do everytime making it tedious and redundant
+For the entirety of the project, I have used <b>Kotlin 1.7.0</b> for the functionality and I used <b>XML</b> for the front-end of the application.
 
-- I implemented the `date-fns` dependency to manipulate and display the time & date the I wanted to and to create my calendar
+#### XML
 
-- I incorporated `tailwindcss` to create and style my calendar component the way I wanted it to look
+- I implemented `ScrollView` for my <b>Settings</b> & <b>Category</b> activities
+- `RelativeLayout` was used for my <b>Home</b> activity
+- `ConstraintLayout` was used for my <b>Splash</b> activity
+- `LinearLayout` was used for majority of the project
 
-- `axios` was implemented so that I can make HTTP requests to the database server so that I can retrieve and push data to it
+#### Kotlin
 
-- I used `PHPMyAdmin` to alter data on the database and used PHP to talk to the backend MySQL database
- 
-
+- I created a `Constants.kt` object file which held all my question variables and my `sharedPreferences` data
+- I created a `Questions.kt` class file, where I created the model of my question, meaning what data my question is to consist of like if it has an image, how many answers this question has and I also passed a key/value pair, that will check if my question is correct
+- I created a `UpdateUI()` function that will update the question and its answers on one `Questions.kt` activity file instead of creating a different file for each categories' question.
+- I used `Intent` to send and receive data from each activity
+- I also incorporated `SharedPreferences` to save and send data to each activity, like the users score and username, which will be saved conditionally using an `if()` statement
 
 #### Highlights
 
-<!-- stipulated the highlight you experienced with the project -->
+<!-- stipulated the highlight you einstrumentalerienced with the project -->
 
-- A highlight of this project was defintely interacting with the database and manipulating data on the database and seeing it being displaye on the application.
+- A highlight of this project was definitely learning a new language (Kotlin) and working and developing for mobile.
+- It was also a high point for me to load my app onto my mobile device and interacting with it
+- Fixing all of the bugs I struggled with was also a big plus for me
 
 #### Challenges
 
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
 
-- I struggled to get all my updates and deletes to be implemented.
-- I struggled to get all my profile pictures to be updated and rendered on the DOM from the Database.
-- debugging the CORS error's for sending data to the Database, especially my Register page's CORS error
-- I struggled a lot with debugging the PHP error's
-- Front-end was also a bit tricky because I kept following the trend of putting everything in blocks
-
-#### Above And Beyond
-
-<!-- TODO Change this! -->
-
-The aspects I learned outside of this class, is that I implemented tailwindcss to create my calendar, I also incorporated the Date-fns dependency to render my calendar dates.
+- I encountered a bug that will not pass the score if the last question of the category is correct, essentially giving the user a 4/5 score instead of a 5/5, unfortunately I could not get this fixed, but will be in later stages of development of instrumental
+- It was very challenging sending and receiving data using `SharedPreferences` but got it figured out in the end
+- I was flabbergasted at how dense Kotlin actually is, so wrapping my head around how the code is written and how data works was a struggle to say the least
 
 ### Future Implementation
 
@@ -196,10 +188,11 @@ The aspects I learned outside of this class, is that I implemented tailwindcss t
 
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-- I want to complete all my update and delete's of the patients and doctor's
-- I want to fix my styling for my application
-- I want to display the appointments by week
-- I want to complete the profile pictures to be rendered and updated
+- I would like to add more questions
+- I want to change the answering method, making it more intricate and fun
+- I want to implement Firebase or Firestore
+- I want to fix my Shared Preferences bug
+- I want to add more games that are part of the esports world
 
 <!-- MOCKUPS -->
 
@@ -209,10 +202,10 @@ The aspects I learned outside of this class, is that I implemented tailwindcss t
 
 <!-- TODO Change this -->
 
-![image2](src/components/assets/Mockup1.jpg)
-![image3](src/components/assets/Mockup3.jpg)
-![image4](src/components/assets/Mockup4.jpg)
-![image5](src/components/assets/Mockup5.jpg)
+![image10][image10]
+![image11][image11]
+![image12][image12]
+![image13][image13]
 <br>
 
 
@@ -222,11 +215,11 @@ The aspects I learned outside of this class, is that I implemented tailwindcss t
 
 <!-- TODO Change this -->
 
-To see a run through of the application, click below:
+To see a run through of instrumental, click below:
 
-[View Demonstration](https://youtu.be/Oag-DdqW9jA)
+[View Demonstration](https://youtu.be/aY9cDdwKBnE)
 
-See the [open issues](https://github.com/WiaanDuvenhage-200307/Instrumental/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/WiaanDuvenhage-200307/instrumental/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 
@@ -245,7 +238,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Contact
 
 - **Wiaan Duvenhage** - [wiaanduvenhage.dev@gmail.com](mailto:wiaanduvenhage.dev@gmail.com) - [@wiaan.dev](https://www.instagram.com/wiaan.dev/)
-- **Project Link** - https://github.com/WiaanDuvenhage-200307/Instrumental
+- **Project Link** - https://github.com/WiaanDuvenhage-200307/instrumental
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -255,10 +248,30 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- TODO Change this -->
 
 - [Stack Overflow](https://stackoverflow.com/)
-- [Cooolors](https://coolors.co/)
+- [How to add a splash screen](https://www.youtube.com/watch?v=Q0gRqbtFLcw)
 - [Figma](https://www.figma.com/)
-- [My Pinterest Board](https://za.pinterest.com/doubleudeedesigns/budget-app/)
-- [(w3schools) SQL SELECT Statement](https://www.w3schools.com/sql/sql_select.asp)
-- [Leander van Aarde](https://github.com/LeandervanAarde)
+- [Lecturer](https://github.com/armandpret)
+- [Zlatko Plamenov Mockups](https://www.freepik.com/author/zlatko-plamenov)
 - [Vian Du Plessis](https://github.com/Vian-du-Plessis)
-- [Reinhardt de Beer](https://github.com/EpicBlue1)
+- [unDraw](https://undraw.co/)
+- [No History Activity Element](https://developer.android.com/guide/topics/manifest/activity-element#nohist)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/)
+
+[image1]: Images/aboutproject.jpg
+[image2]: Images/entername.jpg
+[image3]: Images/choosecategory.jpg
+[image4]: Images/answerquiz.jpg
+[image5]: Images/results.jpg
+[image6]: Images/highscore.jpg
+[image7]: Images/wireframes.png
+[image8]: Images/moodboard.png
+[image9]: Images/userflow.png
+[image10]: Images/mockup1.jpg
+[image11]: Images/mockup2.jpg
+[image12]: Images/mockup3.jpg
+[image13]: Images/mockup4.jpg
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/wiaan-duvenhage-95118823a/
+[instagram-shield]: https://img.shields.io/badge/-Instagram-black.svg?style=flat-square&logo=instagram&colorB=555
+[instagram-url]: https://www.instagram.com/wiaan.dev/

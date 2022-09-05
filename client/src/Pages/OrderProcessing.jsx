@@ -1,14 +1,27 @@
 import React, {useEffect} from 'react';
 import style from './OrderProcessing.module.scss';
 import Nav from '../Components/UI/Nav/Nav';
-import Footer from '../Components/UI/Footer/Footer';
-import Button from '../Components/UI/Button/Button';
+import axios from 'axios';
+import OrderItem from '../Components/SubComponents/OrderItem/OrderItem';
+import { useState } from 'react';
 
 export default function OrderProcessing() {
 
+    const [orders, setOrders] = useState();
+
     useEffect(() =>{
         document.title = "Order Processing"
-     }, [])
+    }, [])
+
+    useEffect(() => {
+        axios.get('http://localhost:5000/api/allorders')
+        .then(res => {
+            let data = res.data;
+            console.log(data);
+            let orderItems = data.map(i => <OrderItem key={i._id} id={i._id} date={i.orderInfo.orderDate} name={i.userInfo.email}/>)
+            setOrders(orderItems);
+        })
+    }, [])
 
   return (
         <div className={style.container}>
@@ -41,48 +54,9 @@ export default function OrderProcessing() {
             <div className={style.right}>
                 <h2>Our Orders</h2>
                 <table className={style.table}>
-                    <thead>
-                        <th>ID</th>
-                        <th>Product</th>
-                        <th>Type</th>
-                        <th>Color</th>
-                        <th>Date</th>
-                    </thead>
+                    {orders}
                     <br />
-                    <hr />
-                    <tr>
-                        <td>#832h3vh231h</td>
-                        <td>Gibson ES-335</td>
-                        <td>Electric</td>
-                        <td>Red</td>
-                        <td>09-05-2020</td>
-                        <td className={style.flexCol}><Button type="tersiary" text="Dispatch"/></td>
-                    </tr>
-                    <tr>
-                        <td>#832h3vh231h</td>
-                        <td>Gibson ES-335</td>
-                        <td>Electric</td>
-                        <td>Red</td>
-                        <td>09-05-2020</td>
-                        <td className={style.flexCol}><Button type="tersiary" text="Dispatch"/></td>
-                    </tr>
-                    <tr>
-                        <td>#832h3vh231h</td>
-                        <td>Gibson ES-335</td>
-                        <td>Electric</td>
-                        <td>Red</td>
-                        <td>09-05-2020</td>
-                        <td className={style.flexCol}><Button type="tersiary" text="Dispatch"/></td>
-                    </tr>
-                    <tr>
-                        <td>#832h3vh231h</td>
-                        <td>Gibson ES-335</td>
-                        <td>Electric</td>
-                        <td>Red</td>
-                        <td>09-05-2020</td>
-                        <td className={style.flexCol}><Button type="tersiary" text="Dispatch"/></td>
-                    </tr>
-                
+                    <hr />  
                 </table>
             </div>
         </div>

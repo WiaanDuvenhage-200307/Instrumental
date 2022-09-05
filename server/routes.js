@@ -1,6 +1,7 @@
 const express = require('express');
 const productSchema = require('./models/Products');
 const userSchema = require('./models/Users');
+const orderSchema = require('./models/Orders');
 const router = express();
 
 // This is where we will write our routes
@@ -87,8 +88,12 @@ router.post('/api/loginuser',async (req, res) =>{
     }else{
        res.json({msg: "User Not Found"});
     }
-    
-
 });
+
+// Order Routes
+router.get('/api/allorders', async (req, res) => {
+    const findOrders= await orderSchema.find();
+    res.json(findOrders);
+})
 
 module.exports = router;

@@ -17,10 +17,6 @@ const productSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    discount: {
-        type: Number,
-        required: true
-    },
     discountPrice: {
         type: Number,
         required: true
@@ -33,7 +29,7 @@ const productSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    // imgUrl: Array,
+    imgUrl: Array,
     date: {
         type: Date,
         default: Date.now

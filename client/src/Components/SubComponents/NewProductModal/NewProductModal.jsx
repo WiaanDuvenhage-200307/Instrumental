@@ -5,7 +5,7 @@ import Input from '../../UI/Input/Input';
 
 export default function NewProductModal(props) {
 
-    const defValues = ["brand", "model", "type", "price", "discountPrice", "inStock", "desc", "neckLength", "handedness", "colorOne", "colorTwo", "colorThree"] 
+    const defValues = ["brand", "model", "type", "price", "discountPrice", "inStock", "desc", "imgUrl", "neckLength", "handedness", "colorOne", "colorTwo", "colorThree"] 
 
     const [imageName, setImageName] = useState("Image name will appear here");
     const [productImage, setProductImage] = useState();
@@ -56,6 +56,7 @@ export default function NewProductModal(props) {
             discountPrice: +values["discountPrice"],
             inStock: +values["inStock"],
             desc: values["desc"],
+            imgUrl: [values["imgUrl"]],
             productDetails: {
                 neckLength: +values["neckLength"],
                 handedness: values["handedness"],
@@ -67,12 +68,9 @@ export default function NewProductModal(props) {
             }
         }
 
-        payloadData.append('information', JSON.stringify(payload));
-        payloadData.append('image', productImage)
-
         console.log(payload);
 
-        axios.post('http://localhost:5000/api/addproduct', payloadData)
+        axios.post('http://localhost:5000/api/addproduct', payload)
         .then(res => {
             console.log("Guitar Added");
         })
@@ -98,67 +96,61 @@ export default function NewProductModal(props) {
     />
     <Input
         name="model"
-        value={values.model}
         placeholder="Model"
         onChange={handleInputChange} 
     />
     <Input
         name="type"
-        value={values.type}
         placeholder="Type"
         onChange={handleInputChange} 
     />
     <Input
         name="price"
-        value={values.price}
         placeholder="Price"
         onChange={handleInputChange} 
     />
     <Input
         name="discountPrice"
-        value={values.discountPrice}
         placeholder="Discount Price"
         onChange={handleInputChange} 
     />
     <Input
         name="inStock"
-        value={values.inStock}
         placeholder="In Stock"
         onChange={handleInputChange} 
     />
     <Input
         name="desc"
-        value={values.desc}
         placeholder="Description"
         onChange={handleInputChange} 
     />
     <Input
+    name="imgUrl"
+    placeholder="Description"
+    onChange={handleInputChange} 
+    />
+    <Input
         name="neckLength"
-        value={values.neckLength}
         placeholder="Neck Length"
         onChange={handleInputChange} 
     />
     <Input
         name="handedness"
-        value={values.handedness}
         placeholder="Handedness"
         onChange={handleInputChange} 
     />
     <Input
         name="colorOne"
-        value={values.colorOne}
         placeholder="Color 1"
         onChange={handleInputChange} 
     />
     <Input
         name="colorTwo"
-        value={values.colorTwo}
         placeholder="Color 2"
         onChange={handleInputChange} 
     />
     <Input
         name="colorThree"
-        value={values.colorThree}
         placeholder="Color 3"
         onChange={handleInputChange} 
     />

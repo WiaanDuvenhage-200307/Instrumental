@@ -1,40 +1,25 @@
 const express = require('express');
 const productSchema = require('./models/Products');
-const multer = require('multer');
-const path = require('path');
+const userSchema = require('./models/Users');
 const router = express();
-
-// Multer middleware
-
-const productImageStore = multer.diskStorage({
-    destination: (req, file, callBack) => {
-        callBack(null, './productImages')
-    },
-
-    filename: (req, file, callBack) => {
-        callBack(null, Date.now() + path.extname(file.originalname))
-    }
-});
-
-const uploadProductImage = multer({storage: productImageStore});
 
 // This is where we will write our routes
 
-router.post('/api/addproduct', uploadProductImage.single('image'), (req, res) => {
-
-    let data = JSON.parse(req.body.information);
+router.post('/api/addproduct', (req, res) => {
 
     const newProduct = new productSchema({
-        brand: data.brand,
-        model: data.model,
-        type: data.type,
-        price: data.price,
-        inStock: data.inStock,
-        desc: data.desc,
+        brand: req.body.brand,
+        model: req.body.model,
+        type: req.body.type,
+        price: req.body.price,
+        discountPrice: req.body.discountPrice,
+        inStock: req.body.inStock,
+        desc: req.body.desc,
+        imgUrl: [req.body.imgUrl],
         productDetails: {
-          neckLength: data.productDetails.neckLength,
-          handedness: data.productDetails.handedness,
-          colors: [data.productDetails.colorOne, data.productDetails.colorTwo, data.productDetails.colorThree] 
+          neckLength: req.body.productDetails.neckLength,
+          handedness: req.body.productDetails.handedness,
+          colors: [req.body.productDetails.colorOne, req.body.productDetails.colorTwo, req.body.productDetails.colorThree] 
         }
     });
 
@@ -71,6 +56,7 @@ router.patch('/api/updateproduct/:id', async (req, res) => {
             model: req.body.model,
             type: req.body.type,
             price: req.body.price,
+            discountPrice: req.body.discountPrice,
             inStock: req.body.inStock,
             desc: req.body.desc,
             availStock: {
@@ -83,5 +69,27 @@ router.patch('/api/updateproduct/:id', async (req, res) => {
     
     res.json(updProduct);
 })
+
+// User Routes
+router.post('/api/loginuser',async (req, res) =>{
+
+    const findUser = await userSchema.findOne({
+        email: req.body.email
+    });
+
+    if(findUser){
+        if(await bcrypt.compare(req.body.password, findUser.password)){
+            console.log(findUser)
+            return res.json(findUser)
+        } else{
+            console.log("there was an error")
+            return res.json(false)
+        }
+    
+    } else{
+        res.json(false)
+    }
+
+});
 
 module.exports = router;

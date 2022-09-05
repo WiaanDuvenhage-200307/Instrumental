@@ -13,6 +13,14 @@ export default function Card(props) {
       navigate('/individual-product');
     }
 
+    const addToCart = () => {
+        if(!sessionStorage.getItem("user")){
+            navigate('/login')
+        }else{
+            // Add to the cart
+        }
+    }
+
   return (
     <div className={style.cardContainer}>
 
@@ -34,7 +42,7 @@ export default function Card(props) {
 
             <div className={style.buttonWrapper}>
                 <p onClick={goToGuitar}>View More</p>
-                <Button text="Add to Cart" type="secondary"/>
+                <Button onClick={addToCart} text="Add to Cart" type="secondary"/>
             </div>
 
         </div>

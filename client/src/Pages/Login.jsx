@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
 
+    const defVals = ['email', 'password'];
+    const [values, setValues] = useState(defVals);
     const navigate = useNavigate();
     const emailInput = useRef();
     const passwordInput = useRef();
@@ -15,9 +17,23 @@ export default function Login() {
     const [passwordWarn, setPasswordWarn] = useState();
 
 
-    // let password = passwordInput.current.value;
+
+    const handleInputChange = (e) => {
+        const {name, value} = e.target;
+        setValues({
+            ...values,
+            [name]: value,
+        });
+        console.log(values);
+    }
 
     const handleForm = () => {
+
+        let payload = {
+            email: values.email,
+            password: values.password
+        }
+
         let mailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         let passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(\W|_)).{5,}$/ ;
         let email = emailInput.current.value;
@@ -49,21 +65,27 @@ export default function Login() {
             <h3 className={style.heading}>LOG IN</h3>
             <h4 className={style.subText}>Welcome Back to Instrumental! <br /> Enter your details below</h4>
             <div className={style.flex}>
-                <Input 
+                <Input
+                    name="email" 
                     placeholder="someone@gmail.com"
                     inputType="email"
                     type="primary"
+                    value={values["email"]}
                     ref={ emailInput }
+                    onChange={handleInputChange}
                 />
                 <p className={style.emailWarn}>{emailWarn}</p>
             </div>
             <br />
             <div className={style.flex}>
-                <Input 
+                <Input
+                    name="password"  
                     placeholder="Password" 
                     inputType="password"
                     type="primary"
+                    value={values["password"]}
                     ref={ passwordInput }
+                    onChange={handleInputChange}
                 />
                 <p className={style.passwordWarn}>{passwordWarn}</p>
             </div>

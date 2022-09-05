@@ -15,10 +15,10 @@
 <p align="center">
 
   <a href="https://github.com/WiaanDuvenhage-200307/instrumental">
-    <img src="Images/instrumentallogo.png" width="100px">
+    <img src="client\src\Assets\logo-light.svg/" width="100px">
   </a>
 
-<h3 align="center">Instrumenral</h3>
+<h3 align="center">Instrumental</h3>
 
   <p align="center">
     An Android Application built with Kotlin, that quizzes users on their esports knowledge.<br>

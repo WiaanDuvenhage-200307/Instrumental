@@ -136,19 +136,18 @@ The user can view the product they are looking for individually and they can loo
 After the user has decided what guitar they want to order, they can add it to the cart (Note: this can only be done if the user is logged in!).
 
 #### Placing orders via checkout
-![image5][image5]
 If the user wants to place an order for their guitar, they can do so by proceeding to the checkout page and typing in their card details (this is a mock payment card section)
 
 ### For the Admin
 #### Adding Guitars To The Store
-![image6][image6]
+![image6][image5]
 The admin has access the to the inventory management page, which means he can add guitars to the store by clicking on "New Guitar+", wherein a modal will popup and the admin can enter all the necessary information to add a guitar to Instrumental.
 
 #### Updating Guitar Information
-![image7][image7] If the user feels like there is some information on a guitar that is not accurate or that needs updating, the  admin can do so by clicking on the update button, where again, a modal will pop-up and the admin can update a guitar's information accordingly.
+![image7][image6] If the user feels like there is some information on a guitar that is not accurate or that needs updating, the  admin can do so by clicking on the update button, where again, a modal will pop-up and the admin can update a guitar's information accordingly.
 
 #### Deleting Guitars From the Database
-Sometimes you feel that you just want to delete a guitar that may be not of interest to some people. The admin can delete a guitar from the store by simply clicking on delete, and then confirming yes by clicking on the modal that will appear next.
+![image7][image7]Sometimes you feel that you just want to delete a guitar that may be not of interest to some people. The admin can delete a guitar from the store by simply clicking on delete, and then confirming yes by clicking on the modal that will appear next.
 
 #### Dispatching Orders
 From the order processing page, the admin can view any incoming orders and their information, by clicking on the dispatch button, the user will remove the order from the database and so delivery will take place.

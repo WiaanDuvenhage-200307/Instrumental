@@ -65,71 +65,95 @@ export default function NewProductModal(props) {
     <div className={style.modal}>
         <h1>Add Guitar</h1>
     <form className={style.form} onSubmit={addProduct}>
-    <Input
-        name="brand"
-        placeholder="Brand"
-        onChange={handleInputChange} 
-    />
-    <Input
-        name="model"
-        placeholder="Model"
-        onChange={handleInputChange} 
-    />
-    <Input
-        name="type"
-        placeholder="Type"
-        onChange={handleInputChange} 
-    />
-    <Input
-        name="price"
-        placeholder="Price"
-        onChange={handleInputChange} 
-    />
-    <Input
-        name="discountPrice"
-        placeholder="Discount Price"
-        onChange={handleInputChange} 
-    />
+    <div className={style.flexCon}>
+        <Input
+            name="brand"
+            placeholder="Brand"
+            onChange={handleInputChange}
+            type="modalInput" 
+        />
+        <Input
+            name="model"
+            placeholder="Model"
+            onChange={handleInputChange} 
+            type="modalInput"
+        />
+        <Input
+            name="type"
+            placeholder="Type"
+            onChange={handleInputChange} 
+            type="modalInput"
+        />
+    </div>
+
+    <div className={style.flexCon}>
+        <Input
+            name="price"
+            placeholder="Price"
+            onChange={handleInputChange}
+            type="modalInput" 
+        />
+        <Input
+            name="discountPrice"
+            placeholder="Discount Price"
+            onChange={handleInputChange} 
+            type="modalInput"
+        />
+    </div>
+
     <Input
         name="inStock"
         placeholder="In Stock"
         onChange={handleInputChange} 
+        type="longInput"
     />
     <Input
         name="desc"
         placeholder="Description"
         onChange={handleInputChange} 
+        type="longInput"
     />
     <Input
     name="imgUrl"
     placeholder="Input Img Url"
     onChange={handleInputChange} 
+    type="longInput"
     />
-    <Input
-        name="neckLength"
-        placeholder="Neck Length"
-        onChange={handleInputChange} 
-    />
-    <Input
-        name="handedness"
-        placeholder="Handedness"
-        onChange={handleInputChange} 
-    />
-    <Input
-        name="colorOne"
-        placeholder="Color 1"
-        onChange={handleInputChange} 
-    />
-    <Input
-        name="colorTwo"
-        placeholder="Color 2"
-        onChange={handleInputChange} 
-    />
-    <Input
-        name="colorThree"
-        placeholder="Color 3"
-        onChange={handleInputChange} 
-    />
+    <div className={style.flexCon}>
+        <Input
+            name="neckLength"
+            placeholder="Neck Length"
+            onChange={handleInputChange}
+            type="modalInput" 
+        />
+        <Input
+            name="handedness"
+            placeholder="Handedness"
+            onChange={handleInputChange} 
+            type="modalInput"
+        />
+    </div>
+    <div className={style.flexCon}>
+        <Input
+            name="colorOne"
+            placeholder="Color 1"
+            onChange={handleInputChange} 
+            type="modalInput"
+        />
+        <Input
+            name="colorTwo"
+            placeholder="Color 2"
+            onChange={handleInputChange} 
+            type="modalInput"
+        />
+        <Input
+            name="colorThree"
+            placeholder="Color 3"
+            onChange={handleInputChange} 
+            type="modalInput"
+        />
+    </div>
+
     <button className={style.updateBtn}>
         <p className={style.btnText}>Add Guitar</p>
     </button>

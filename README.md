@@ -163,7 +163,7 @@ The color blue just gives a website just that sleek premium feel combined with a
 
 ### Wireframes
 
-![image8][image8]
+![image8](client/src/Assets/mockups/wireframes.jpg)
 
 ### Moodboard
 ![image9][image9]
@@ -284,7 +284,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image4]: Images/answerquiz.jpg
 [image5]: Images/results.jpg
 [image6]: Images/highscore.jpg
-[image7]: 
+[image7]: nothing.png
 [image8]: client/src/Assets/mockups/wireframes.jpg
 [image9]: client/src/Assets/mockups/moodboard.jpg
 [image10]: Images/mockup10.jpg

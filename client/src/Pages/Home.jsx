@@ -71,13 +71,15 @@ export default function Home(props) {
         <div className={style.cardCon}>
             <img onClick={goLeft} className={style.chevron} src={chevLeft} width={50}/>
             {products}
-            <img onClick={goRight} className={style.chevron} src={chevRight}/>
+            <img onClick={goRight} className={style.chevronRight} src={chevRight}/>
         </div>
 
         <div className={style.lowStockCon}>
             <h3 className={style.heading}>While Stocks Last</h3>
             <div className={style.cardCon}>
-                {products}
+            <img onClick={goLeft} className={style.chevron} src={chevLeft} width={50}/>
+            {products}
+            <img onClick={goRight} className={style.chevronRight} src={chevRight}/>
             </div>
 
         </div>

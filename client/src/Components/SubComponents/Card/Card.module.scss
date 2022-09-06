@@ -3,11 +3,10 @@
 .cardContainer{
     background-color: $white;
     min-width:25%;
-    display: flex;
-    justify-content: space-between;
     flex-flow: column;
     margin-right: 1%;
     border-radius: 5px;
+    padding-bottom: 10px;
 
     .stockWarning{
         color: $red;

@@ -15,11 +15,16 @@
         overflow: hidden;
 
         .chevron{
-            overflow: hidden;
-            position: absolute;
+            // overflow: scroll;
+            position: sticky;
             z-index: 1;
-            top: 65%;
-            right: 0%;
+            left: 0;
+            top: 75%;
+        }
+
+        .chevronRight{
+            position: sticky;
+            right:0;
         }
     }
     .lowStockCon{

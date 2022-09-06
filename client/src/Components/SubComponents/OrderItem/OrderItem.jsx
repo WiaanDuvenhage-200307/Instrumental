@@ -7,7 +7,6 @@ export default function OrderItem(props) {
     const dispatch = () => {
       axios.delete('http://localhost:5000/api/deleteorder/' + props.id)
       .then( res => {
-          console.log("Order Deleted");
           window.location.reload();
       })
     }

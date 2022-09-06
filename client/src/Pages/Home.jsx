@@ -48,10 +48,8 @@ export default function Home(props) {
         axios.get('http://localhost:5000/api/allproducts')
         .then(res => {
             let productData = res.data;
-            console.log(productData);
             let renderProducts = productData.map(i => <Card key={i._id} productId={i._id} brand={i.brand} model={i.model} price={i.price} discountPrice={i.discountPrice} imgUrl={i.imgUrl[0]} qty={i.inStock}/>)
             setProducts(renderProducts);
-            console.log(products);
         })
         .catch(err => console.log(err))
     }, [])

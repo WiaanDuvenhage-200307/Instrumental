@@ -20,12 +20,10 @@ export default function CartModal(props) {
 
     useEffect(() => {
         let cartItems = sessionStorage.getItem("cartItems");
-        console.log(sessionStorage.getItem("cartItems"));
         if(cartItems === undefined || cartItems === null){
 
         }else{
             cartItems = JSON.parse(cartItems);
-            console.log(cartItems);
             let cartProduct = cartItems.map(i => <CartItem  id={i.id} brand={i.brand} model={i.model} qty={i.qty} price={i.price} discountPrice={i.discountPrice} img={i.img}/>)
             setCartProduct(cartProduct);
         }

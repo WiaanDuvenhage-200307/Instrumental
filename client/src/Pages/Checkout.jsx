@@ -14,7 +14,6 @@ export default function Checkout(props) {
 
     useEffect(() => {
         let cartItems = sessionStorage.getItem("cartItems");
-        console.log(sessionStorage.getItem("cartItems"));
         if(cartItems === undefined || cartItems === null){
 
         }else{

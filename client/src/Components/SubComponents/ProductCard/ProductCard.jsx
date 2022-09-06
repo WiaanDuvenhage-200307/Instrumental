@@ -9,7 +9,6 @@ export default function ProductCard(props) {
 
   const goToGuitar = () => {
     var thisThing = sessionStorage.setItem('productId', props.productId);
-    console.log(thisThing);
     navigate('/individual-product');
   }
 
@@ -22,7 +21,6 @@ export default function ProductCard(props) {
       navigate('/login')
     }else{
 
-      console.log("user logged in");
 
       if(checkCart === null || checkCart === undefined){
         let cartData = {

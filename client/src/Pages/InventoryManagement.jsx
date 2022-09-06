@@ -24,7 +24,6 @@ export default function InventoryManagement(props) {
         axios.get('http://localhost:5000/api/allproducts')
         .then(res => {
             let productData = res.data;
-            console.log(productData);
             let renderProducts = productData.map(i => <InventoryCard key={i._id} productId={i._id} brand={i.brand} model={i.model} price={i.price} type={i.type} discountPrice={i.discountPrice} inStock={i.inStock} desc={i.desc}/>)
             setInventory(renderProducts);
         })

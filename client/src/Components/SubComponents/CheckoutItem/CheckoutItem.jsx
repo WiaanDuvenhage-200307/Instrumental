@@ -10,7 +10,6 @@ export default function CheckoutItem(props) {
 
     const removeProduct = () => {
         let cartItems = JSON.parse(sessionStorage.getItem("cartItems"));
-        console.log(cartItems);
         if(cartItems === null || cartItems === undefined){
 
         }else{

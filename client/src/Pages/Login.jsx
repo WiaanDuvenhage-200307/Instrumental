@@ -25,7 +25,6 @@ export default function Login() {
             ...values,
             [name]: value,
         });
-        console.log(values);
     }
 
     const handleForm = () => {

@@ -104,8 +104,8 @@ export default function UpdateModal(props) {
         </div>
         <button className={style.updateBtn}>
             <p className={style.btnText}>Update User</p>
-            </button>
-            <p className={style.cancel} onClick={closeModal}>Cancel</p>
+        </button>
+        <p className={style.cancel} onClick={closeModal}>Cancel</p>
     </form>
     </div>    
     </div>

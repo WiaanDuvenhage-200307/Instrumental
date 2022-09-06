@@ -25,7 +25,6 @@ export default function IndividualProduct(props) {
     const productAmount = useRef();
 
     let productId = sessionStorage.getItem("productId");
-    console.log(productId);
 
     const addToCart = () => {
 
@@ -36,7 +35,6 @@ export default function IndividualProduct(props) {
         if(!sessionStorage.getItem("currentUser")){
             navigate('/login')
         }else{
-            console.log("user logged in");
     
             if(checkCart.length === 0){
             let cartData = {
@@ -72,7 +70,6 @@ export default function IndividualProduct(props) {
             parsedData.push(cartData);
     
             sessionStorage.setItem('cartItems', JSON.stringify(parsedData));
-            console.log(cartData);
             }
             props.setRerender(true);
 
@@ -94,7 +91,6 @@ export default function IndividualProduct(props) {
         axios.get('http://localhost:5000/api/oneproduct/' + productId)
         .then(res => {
             let data = res.data;
-            console.log(data);
             setProductData({
                 productBrand: data.brand,
                 productModel: data.model,
@@ -107,8 +103,6 @@ export default function IndividualProduct(props) {
                 productHandedness: data.productDetails.handedness,
                 productNeckLength: data.productDetails.neckLength
             })
-
-            console.log(productData);
 
         })
     }, [])

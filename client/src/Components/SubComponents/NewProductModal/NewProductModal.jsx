@@ -21,7 +21,6 @@ export default function NewProductModal(props) {
             ...values,
             [name]: value,
         });
-        console.log(values);
     };
 
     const addProduct = (e) => {
@@ -47,14 +46,11 @@ export default function NewProductModal(props) {
             }
         }
 
-        console.log(payload);
 
         axios.post('http://localhost:5000/api/addproduct', payload)
         .then(res => {
-            console.log("Guitar Added");
             window.location.reload();
         })
-        .catch(err => console.log(err));
     }
 
     const closeModal = () => {

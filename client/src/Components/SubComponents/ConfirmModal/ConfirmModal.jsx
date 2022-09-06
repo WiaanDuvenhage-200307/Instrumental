@@ -8,7 +8,6 @@ export default function ConfirmModal(props) {
     const deleteGuitar = () => {
         axios.delete('http://localhost:5000/api/deleteproduct/' + props.id)
         .then( res => {
-            console.log("Guitar Deleted");
             window.location.reload();
         })
     }

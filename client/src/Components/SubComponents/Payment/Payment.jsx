@@ -24,7 +24,6 @@ export default function Payment() {
 
     axios.post('http://localhost:5000/api/addorder', payload)
     .then(res => {
-      console.log("Guitar Added");
     })
     .catch(err => console.log(err));
 

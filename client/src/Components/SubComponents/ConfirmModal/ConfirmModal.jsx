@@ -9,6 +9,7 @@ export default function ConfirmModal(props) {
         axios.delete('http://localhost:5000/api/deleteproduct/' + props.id)
         .then( res => {
             console.log("Guitar Deleted");
+            window.location.reload();
         })
     }
 
@@ -21,8 +22,11 @@ export default function ConfirmModal(props) {
         <div className={style.modal}>
             <h3>Delete This?</h3>
             <h4>Are you sure you want to delete {props.brand} {props.model}?</h4>
-            <Button onClick={deleteGuitar} text="Yes" type="primary"/>
-            <Button onClick={closeModal} text="No" type="secondary"/>
+            <div className={style.flexCon}>
+            <div onClick={deleteGuitar}  className={style.confirm}>Yes</div>
+            <div onClick={closeModal} className={style.cancel}>No</div>
+            </div>
+
         </div>
     </div>
   )

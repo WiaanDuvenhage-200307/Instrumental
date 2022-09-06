@@ -18,9 +18,10 @@ export default function OrderProcessing() {
         .then(res => {
             let data = res.data;
             console.log(data);
-            let orderItems = data.map(i => <OrderItem key={i._id} id={i._id} date={i.orderInfo.orderDate} name={i.userInfo.email}/>)
+            let orderItems = data.map(i => <OrderItem key={i._id} id={i._id} date={i.orderDate} name={i.userInfo.email} amount={i.userInfo.amountPaid}/>)
             setOrders(orderItems);
         })
+        .catch(err => console.log(err));
     }, [])
 
   return (
@@ -53,11 +54,7 @@ export default function OrderProcessing() {
             </div>
             <div className={style.right}>
                 <h2>Our Orders</h2>
-                <table className={style.table}>
-                    {orders}
-                    <br />
-                    <hr />  
-                </table>
+                {orders} 
             </div>
         </div>
     </div>

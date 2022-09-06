@@ -96,4 +96,8 @@ router.get('/api/allorders', async (req, res) => {
     res.json(findOrders);
 })
 
+router.delete('/api/deleteorder/:id', async (req, res) => {
+    const deleteOrder = await orderSchema.deleteOne({ _id: req.params.id })
+    res.json(deleteOrder);
+})
 module.exports = router;

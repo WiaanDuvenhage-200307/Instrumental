@@ -52,6 +52,7 @@ export default function NewProductModal(props) {
         axios.post('http://localhost:5000/api/addproduct', payload)
         .then(res => {
             console.log("Guitar Added");
+            window.location.reload();
         })
         .catch(err => console.log(err));
     }
@@ -157,7 +158,7 @@ export default function NewProductModal(props) {
     <button className={style.updateBtn}>
         <p className={style.btnText}>Add Guitar</p>
     </button>
-    <p onClick={closeModal}>Cancel</p>
+    <p className={style.cancel} onClick={closeModal}>Cancel</p>
     </form>
     </div>    
     </div>

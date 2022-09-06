@@ -65,7 +65,10 @@
             position: absolute;
             background-color: #f7f7f7;
         }
-
+        .cancel:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 
 }

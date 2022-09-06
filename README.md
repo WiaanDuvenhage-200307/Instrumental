@@ -73,8 +73,8 @@ This is instrumental! A simple quiz app that quizzes users on their knowledge on
 ### Built With
 [<img src="https://www.svgrepo.com/show/331488/mongodb.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=gs_emea_south_africa_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624560&adgroup=115749711783)
 [<img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://expressjs.com/)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="4%" height="4%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://reactjs.org/)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png?20170401104355" width="4%" height="4%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://nodejs.org/en/)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="6%" height="6%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://reactjs.org/)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png?20170401104355" width="7%" height="7%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://nodejs.org/en/)
 
 
 
@@ -118,28 +118,40 @@ Here are a couple of ways to clone this repo:
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 
-### Entering your username
+### For the User
+
+#### Logging In
 
 ![image2][image2]
-Enter your name to start with the quiz. This name can be changed if you would want to.
+The user can log into their profile using their email and passwords.
 
-### Choose a category
+#### Viewing Products Individually
 
 ![image3][image3]
-Select a category of the esports game that you wanted to get tested in, by tapping on the image tiles below.
+The user can view the product they are looking for individually and they can look for more in-depth information about it, like the neck length, the handedness and much more!
 
-### Answer Quiz Questions
+#### Adding products to a cart
 
 ![image4][image4]
-Answer the question given to the user on screen by tapping on the red buttons below and your score will be updated depending if you got the quiz question correct
+After the user has decided what guitar they want to order, they can add it to the cart (Note: this can only be done if the user is logged in!).
 
-### Display Score
+#### Placing orders via checkout
 ![image5][image5]
-After the user has completed the categories' questions, they can view their score for that category and if they have broken or set a high score they will have a more flared up screen indicating so.
+If the user wants to place an order for their guitar, they can do so by proceeding to the checkout page and typing in their card details (this is a mock payment card section)
 
-### Show & Reset High Score
+### For the Admin
+#### Adding Guitars To The Store
 ![image6][image6]
-The user can view their high score as well as reset it in the settings page
+The admin has access the to the inventory management page, which means he can add guitars to the store by clicking on "New Guitar+", wherein a modal will popup and the admin can enter all the necessary information to add a guitar to Instrumental.
+
+#### Updating Guitar Information
+![image7][image7] If the user feels like there is some information on a guitar that is not accurate or that needs updating, the  admin can do so by clicking on the update button, where again, a modal will pop-up and the admin can update a guitar's information accordingly.
+
+#### Deleting Guitars From the Database
+Sometimes you feel that you just want to delete a guitar that may be not of interest to some people. The admin can delete a guitar from the store by simply clicking on delete, and then confirming yes by clicking on the modal that will appear next.
+
+#### Dispatching Orders
+From the order processing page, the admin can view any incoming orders and their information, by clicking on the dispatch button, the user will remove the order from the database and so delivery will take place.
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly einstrumentallain your concept ideation process -->
@@ -147,16 +159,13 @@ The user can view their high score as well as reset it in the settings page
 
 ## Concept Process
 
-I am a very huge fan of dark theme applications and using colors that contrast extremely well, so in conclusion I thought it was a no-brainer to use in black, white and red in conjunction with each other to create the most eye-catching application. By looking at my wireframes you would notice that my answering method differs from the final application outcome. I have come to realise how intricate and dense Kotlin can be so decided to go with a more simpler, yet effective answering method.
+The color blue just gives a website just that sleek premium feel combined with a color like white, I wanted to use a sans-seriff typeface for this project, cause I just feel like something like cursive or Serif typefaces just won't cut it.
 
 ### Wireframes
 
-![image7][image7]
-
-### Moodboard
 ![image8][image8]
 
-### User Flow
+### Moodboard
 ![image9][image9]
 
 ## Development Process
@@ -165,38 +174,35 @@ The `Development Process` is the technical implementations and functionality don
 
 ### Implementation Process
 
-For the entirety of the project, I have used <b>Kotlin 1.7.0</b> for the functionality and I used <b>XML</b> for the front-end of the application.
+- I used `npx create-react app` to create this React project. I implemented component-based development instead of classes. By doing this, I will be able to easily inject and eject components and sub-components into my project, making it refactorable and reusable instead of writing up classes I have to do everytime making it tedious and redundant
 
-#### XML
+- I implemented to `scss` for the styling of my project and used `module.scss` to style each individual component. An id get given to each classname, making the styling super easy
 
-- I implemented `ScrollView` for my <b>Settings</b> & <b>Category</b> activities
-- `RelativeLayout` was used for my <b>Home</b> activity
-- `ConstraintLayout` was used for my <b>Splash</b> activity
-- `LinearLayout` was used for majority of the project
+- I incorporated MongoDB Atlas as my database where I will get and send my data to.
 
-#### Kotlin
+- `axios` was implemented so that I can make HTTP requests to the database server so that I can retrieve, edit, delete and send (CRUD) data to it
 
-- I created a `Constants.kt` object file which held all my question variables and my `sharedPreferences` data
-- I created a `Questions.kt` class file, where I created the model of my question, meaning what data my question is to consist of like if it has an image, how many answers this question has and I also passed a key/value pair, that will check if my question is correct
-- I created a `UpdateUI()` function that will update the question and its answers on one `Questions.kt` activity file instead of creating a different file for each categories' question.
-- I used `Intent` to send and receive data from each activity
-- I also incorporated `SharedPreferences` to save and send data to each activity, like the users score and username, which will be saved conditionally using an `if()` statement
+- ExpressJS & NodeJS was used so that I can write JavaScript in both my front-end and back-end
+
+- ExpressJS was also used to communicate to my database
+
+- I utilised the `cors` middleware to bypass any errors I will encounter when utilising MongoDB
 
 #### Highlights
 
 <!-- stipulated the highlight you einstrumentalerienced with the project -->
 
-- A highlight of this project was definitely learning a new language (Kotlin) and working and developing for mobile.
-- It was also a high point for me to load my app onto my mobile device and interacting with it
-- Fixing all of the bugs I struggled with was also a big plus for me
+- A very big high point was seeing the data from my backend being populated dynamically in my front-end.
+- Seeing everything come together in the end was also a big highlight for me
+- Even though working with the MERN stack was a challenge, it was also extremely fun and interesting
 
 #### Challenges
 
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
 
-- I encountered a bug that will not pass the score if the last question of the category is correct, essentially giving the user a 4/5 score instead of a 5/5, unfortunately I could not get this fixed, but will be in later stages of development of instrumental
-- It was very challenging sending and receiving data using `SharedPreferences` but got it figured out in the end
-- I was flabbergasted at how dense Kotlin actually is, so wrapping my head around how the code is written and how data works was a struggle to say the least
+- Implementing the cart was definitely a challenge, I didn't know how I would go about doing it, but luckily with the help of my peers, I was able to get it to work like intended.
+- In the beginning I did not know how I was going to map my objects in MongoDB and translate it to my front-end.
+- Showing only certain data was definitely challenging, as I did not get to it, so eventually I just dropped it.
 
 ### Future Implementation
 
@@ -204,11 +210,11 @@ For the entirety of the project, I have used <b>Kotlin 1.7.0</b> for the functio
 
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-- I would like to add more questions
-- I want to change the answering method, making it more intricate and fun
-- I want to implement Firebase or Firestore
-- I want to fix my Shared Preferences bug
-- I want to add more games that are part of the esports world
+- I would like to implement chart.js for data visualisation
+- I want to show the total amount in the cart
+- I want to add a wishlist page
+- I want to add an about us page
+- I want to add video section of each guitar when viewing the guitar individually
 
 <!-- MOCKUPS -->
 
@@ -221,7 +227,6 @@ For the entirety of the project, I have used <b>Kotlin 1.7.0</b> for the functio
 ![image10][image10]
 ![image11][image11]
 ![image12][image12]
-![image13][image13]
 <br>
 
 
@@ -233,7 +238,7 @@ For the entirety of the project, I have used <b>Kotlin 1.7.0</b> for the functio
 
 To see a run through of instrumental, click below:
 
-[View Demonstration](https://youtu.be/aY9cDdwKBnE)
+[View Demonstration](https://youtu.be/8iZ_rSmcN0E)
 
 See the [open issues](https://github.com/WiaanDuvenhage-200307/instrumental/issues) for a list of proposed features (and known issues).
 

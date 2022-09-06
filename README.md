@@ -223,9 +223,9 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- TODO Change this -->
 
-![image10][image10]
-![image11][image11]
-![image12][image12]
+![image2][image2]
+![image3][image3]
+![image4][image4]
 <br>
 
 

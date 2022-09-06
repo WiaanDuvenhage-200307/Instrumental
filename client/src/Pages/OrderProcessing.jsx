@@ -18,7 +18,7 @@ export default function OrderProcessing() {
         .then(res => {
             let data = res.data;
             console.log(data);
-            let orderItems = data.map(i => <OrderItem key={i._id} id={i._id} date={i.orderDate} name={i.userInfo.email} amount={i.userInfo.amountPaid}/>)
+            let orderItems = data.map(i => <OrderItem key={i._id} id={i._id} date={i.orderDate} name={i.userInfo.email} amount={i.userInfo.amountPaid} brand={i.products.guitarBrand} model={i.products.model}/>)
             setOrders(orderItems);
         })
         .catch(err => console.log(err));
@@ -53,8 +53,11 @@ export default function OrderProcessing() {
 
             </div>
             <div className={style.right}>
-                <h2>Our Orders</h2>
+                <h2 className={style.heading}>Our Orders</h2>
+                <div className={style.flexCon}>
                 {orders} 
+                </div> 
+
             </div>
         </div>
     </div>

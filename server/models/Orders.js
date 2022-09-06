@@ -1,20 +1,20 @@
 const mongoose = require('mongoose');
 const orderSchema = mongoose.Schema({
     products: {
-        guitarBrand: String,
-        model: String,
-        type: String,
-        qty: Number
+        guitarBrand:{type: String},
+        model: {type: String},
+        type: {type: String},
+        qty: {type: String}
     },
     userInfo:{
-        email: String,
+        email: {type: String},
         address: {
-            street: String,
-            suburb: String,
-            city: String,
-            postalCode: Number
+            street: {type: String},
+            suburb: {type: String},
+            city: {type: String},
+            postalCode: {type: Number},
         },
-        amountPaid: Number
+        amountPaid: {type: Number},
     }
     
 });

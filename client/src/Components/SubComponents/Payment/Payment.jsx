@@ -1,9 +1,36 @@
+import axios from 'axios';
 import React from 'react';
 import Button from '../../UI/Button/Button';
 import Input from '../../UI/Input/Input';
 import style from './Payment.module.scss';
 
 export default function Payment() {
+
+  const addOrder = ()  => {
+
+    let cart = JSON.parse(sessionStorage.getItem("cartItems"));
+    for(let i = 0; i< cart.length; i++){
+      let payload = {
+      products: {
+      guitarBrand: cart[i].brand,
+      model: cart[i].model,
+      qty: cart[i].qty
+      },
+      userInfo:{
+          email: cart[i].user,
+          amountPaid: cart[i].price
+      }
+    }
+
+    axios.post('http://localhost:5000/api/addorder', payload)
+    .then(res => {
+      console.log("Guitar Added");
+    })
+    .catch(err => console.log(err));
+
+    sessionStorage.clear("cartItems");
+  }}
+
   return (
     <div className={style.container}>
         <h3 className={style.heading}>Payment Details</h3>
@@ -30,7 +57,7 @@ export default function Payment() {
 
         </div>
 
-        <Button text="Checkout" type="primary"/>
+        <Button onClick={addOrder} text="Checkout" type="primary"/>
 
 
     </div>

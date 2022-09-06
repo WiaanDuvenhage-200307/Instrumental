@@ -100,4 +100,26 @@ router.delete('/api/deleteorder/:id', async (req, res) => {
     const deleteOrder = await orderSchema.deleteOne({ _id: req.params.id })
     res.json(deleteOrder);
 })
+
+router.post('/api/addorder', (req,res) =>{
+    const addedOrder = new orderSchema({
+        products: {
+            guitarBrand: req.body.products.guitarBrand,
+            model: req.body.products.model,
+            qty: req.body.products.qty
+        },
+        userInfo:{
+            email: req.body.userInfo.email,
+            amountPaid: req.body.userInfo.amountPaid
+        }
+    });
+
+    addedOrder.save()
+    .then(order =>{
+        res.json(order)
+    })
+    .catch(err =>{
+        res.status(400).json({ msg: "Something went wrong", err: err })
+    })
+});
 module.exports = router;

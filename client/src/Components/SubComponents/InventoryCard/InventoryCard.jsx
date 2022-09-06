@@ -39,8 +39,11 @@ export default function InventoryCard(props) {
         <p>{props.inStock} in Stock</p>
         <p>R{props.price}</p>
         {props.discountPrice ? <p>R{props.discountPrice}</p> : ""}
-        <Button onClick={deleteGuitar} text="Delete"/>
-        <Button onClick={update} text="Update" type="primary"/>
+        <div style={{display: "flex"}}>
+        <div onClick={update} className={style.update}>Update</div>
+        <div onClick={deleteGuitar} className={style.delete}>Delete</div>
+        </div>
+
         {modal}
     </div>
   )

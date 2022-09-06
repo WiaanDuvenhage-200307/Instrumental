@@ -37,9 +37,21 @@
 
         .right{
             display: flex;
+            flex-direction: column;
             padding: 50px;
-            width: 75%;
+            width: 100%;
             color: $blue;
+
+            .heading{
+                width: 100%;
+            }
+
+            .flexCon{
+                display: grid;
+                grid-template-columns: 27% 27% 27% ;
+                justify-content: space-evenly;
+                align-items: center;
+            }
 
             .table{
                 width: 100%;

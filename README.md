@@ -284,9 +284,9 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image4]: Images/answerquiz.jpg
 [image5]: Images/results.jpg
 [image6]: Images/highscore.jpg
-[image7]: client/src/Assets/mockups/wireframes.jpg
-[image8]: client/src/Assets/mockups/moodboard.jpg
-[image9]: Images/userflow.png
+[image7]: 
+[image8]: client/src/Assets/mockups/wireframes.jpg
+[image9]: client/src/Assets/mockups/moodboard.jpg
 [image10]: Images/mockup10.jpg
 [image11]: Images/mockup2.jpg
 [image12]: Images/mockup3.jpg

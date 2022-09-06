@@ -21,7 +21,7 @@
 <h3 align="center">Instrumental</h3>
 
   <p align="center">
-    An Android Application built with Kotlin, that quizzes users on their esports knowledge.<br>
+    A Guitar E-Commerce Website Build with the MERN Stack.<br>
 
    <br />
    <br />
@@ -93,16 +93,26 @@ For development, the latest version of Android Studio is required. The latest ve
 
 ### Installation
 
-1. Clone the repo
-```sh
-git clone https://github.com/WiaanDuvenhage-200307/instrumental.git
-```
-2. Open the project
+Here are a couple of ways to clone this repo:
 
-Use `File` : `Open` in Android Studio.
+1.  GitHub Desktop </br>
+    Enter `https://github.com/WiaanDuvenhage-200307/instrumental.git` into the URL field and press the `Clone` button.
 
-<!-- FEATURES AND FUNCTIONALITY-->
-<!-- You can add the links to all of your imagery at the bottom of the file as references -->
+2.  Clone Repository </br>
+    Run the following in the command-line to clone the project:
+
+    ```sh
+    git clone https://github.com/WiaanDuvenhage-200307/instrumental.git
+    ```
+
+        Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
+
+3.  Install Dependencies </br>
+    Run the following in the command-line to install all the required dependencies:
+
+    ```sh
+    npm install
+    ```
 
 ## Features and Functionality
 
@@ -263,7 +273,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 - [No History Activity Element](https://developer.android.com/guide/topics/manifest/activity-element#nohist)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 
-[image1]: Images/aboutproject.jpg
+[image1]: client/src/Assets/mockups/mockup1.jpg
 [image2]: Images/entername.jpg
 [image3]: Images/choosecategory.jpg
 [image4]: Images/answerquiz.jpg
@@ -272,7 +282,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image7]: Images/wireframes.png
 [image8]: Images/moodboard.png
 [image9]: Images/userflow.png
-[image10]: Images/mockup1.jpg
+[image10]: Images/mockup10.jpg
 [image11]: Images/mockup2.jpg
 [image12]: Images/mockup3.jpg
 [image13]: Images/mockup4.jpg

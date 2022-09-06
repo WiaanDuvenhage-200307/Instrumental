@@ -43,60 +43,69 @@ export default function UpdateModal(props) {
     <div className={style.modal}>
         <h1>Update Guitar</h1>
     <form className={style.form} onSubmit={updateGuitar}>
-        <div className={style.flex}>
+    <div className={style.flex}>
     <Input
         name="brand"
         defaultValue={props.brand}
         placeholder="Brand"
-        onChange={updateValues} 
+        onChange={updateValues}
+        type="modalInput" 
     />
     <Input
         name="model"
         defaultValue={props.model}
         placeholder="Model"
         onChange={updateValues} 
+        type="modalInput" 
+    />
+    <Input
+        name="type"
+        defaultValue={props.type}
+        placeholder="Type"
+        onChange={updateValues} 
+        type="modalInput" 
     />
     </div>
     <div className={style.flex}>
-        <Input
-            name="type"
-            defaultValue={props.type}
-            placeholder="Type"
-            onChange={updateValues} 
-        />
         <Input
             name="price"
             defaultValue={props.price}
             placeholder="Price"
             onChange={updateValues} 
+            type="modalInput" 
+            inputType="number" 
         />
         <Input
             name="discountPrice"
             defaultValue={props.discountPrice}
             placeholder="Discount Price"
             onChange={updateValues} 
+            type="modalInput"
+            inputType="number" 
         />
     </div>
-    <div className={style.flex}>
-        <div className={style.flexMini}>
-            <Input
-                name="inStock"
-                defaultValue={props.inStock}
-                placeholder="In Stock"
-                onChange={updateValues}  
-            />
-            <Input
-                name="desc"
-                defaultValue={props.desc}
-                placeholder="Description"
-                onChange={updateValues} 
-            />
+        <div className={style.flex}>
+                <Input
+                    name="inStock"
+                    defaultValue={props.inStock}
+                    placeholder="In Stock"
+                    onChange={updateValues}
+                    type="modalInput"
+                    inputType="number"  
+                />
+                <Input
+                    name="desc"
+                    defaultValue={props.desc}
+                    placeholder="Description"
+                    onChange={updateValues}
+                    type="longInput"  
+                />
+
+        </div>
         <button className={style.updateBtn}>
             <p className={style.btnText}>Update User</p>
-        </button>
-        <p onClick={closeModal}>Cancel</p>
-    </div>
-    </div>
+            </button>
+            <p className={style.cancel} onClick={closeModal}>Cancel</p>
     </form>
     </div>    
     </div>

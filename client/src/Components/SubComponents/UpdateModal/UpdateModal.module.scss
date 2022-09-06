@@ -18,7 +18,7 @@
         border-radius: 5px;
         padding: 3%;
         width: 50%;
-        height: 50vh;
+        height: fit-content;
 
         .form{
             display: flex;
@@ -50,9 +50,18 @@
             border-radius: 20px;
             margin-bottom: 10px;
 
+            &:hover{
+                cursor: pointer;
+            }
+
             .btnText{
                 color: black;
             }
+        }
+
+        .cancel:hover{
+            text-decoration: underline;
+            cursor:pointer;
         }
     }
 }

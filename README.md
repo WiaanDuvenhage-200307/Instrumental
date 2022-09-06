@@ -150,7 +150,7 @@ The admin has access the to the inventory management page, which means he can ad
 ![image7][image7]Sometimes you feel that you just want to delete a guitar that may be not of interest to some people. The admin can delete a guitar from the store by simply clicking on delete, and then confirming yes by clicking on the modal that will appear next.
 
 #### Dispatching Orders
-From the order processing page, the admin can view any incoming orders and their information, by clicking on the dispatch button, the user will remove the order from the database and so delivery will take place.
+![image14][image14]From the order processing page, the admin can view any incoming orders and their information, by clicking on the dispatch button, the user will remove the order from the database and so delivery will take place.
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly einstrumentallain your concept ideation process -->
@@ -290,6 +290,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image11]: Images/mockup2.jpg
 [image12]: Images/mockup3.jpg
 [image13]: Images/mockup4.jpg
+[image14]: client/src/Assets/mockups/mockup8.jpg
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/wiaan-duvenhage-95118823a/

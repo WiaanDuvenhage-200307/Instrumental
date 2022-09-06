@@ -279,12 +279,12 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 - [Reinhardt de Beer](https://github.com/EpicBlue1)
 
 [image1]: client/src/Assets/mockups/mockup1.jpg
-[image2]: Images/entername.jpg
-[image3]: Images/choosecategory.jpg
-[image4]: Images/answerquiz.jpg
-[image5]: Images/results.jpg
-[image6]: Images/highscore.jpg
-[image7]: nothing.png
+[image2]: client/src/Assets/mockups/mockup2.jpg
+[image3]: client/src/Assets/mockups/mockup3.jpg
+[image4]: client/src/Assets/mockups/mockup4.jpg
+[image5]: client/src/Assets/mockups/mockup5.jpg
+[image6]: client/src/Assets/mockups/mockup6.jpg
+[image7]: client/src/Assets/mockups/mockup7.jpg
 [image8]: client/src/Assets/mockups/wireframes.jpg
 [image9]: client/src/Assets/mockups/moodboard.jpg
 [image10]: Images/mockup10.jpg

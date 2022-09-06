@@ -68,7 +68,7 @@
 
 ### Project Description
 
-This is instrumental! A simple quiz app that quizzes users on their knowledge on all types of esports around the world from veteran esports like Counter Strike all the way to new games entering the esports scene like Valorant. This is a fun app that friends can download to see who can get the highest score and ultimately gain instrumental (einstrumentalerience). People of all ages can play this game, it just has one requirement, be on top of your esports game.
+This is instrumental! A guitar e-commerce store where the user can interact with it via adding guitars to the cart and then checking out, in which they will push an order to the database that can be retrieved by the admin and then can later be dispatched. The only brand sold on this site is Gibson. NOTE: THIS IS A MOCK E-COMMERCE WEBSITE.
 
 ### Built With
 [<img src="https://www.svgrepo.com/show/331488/mongodb.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=gs_emea_south_africa_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624560&adgroup=115749711783)
@@ -269,14 +269,14 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- TODO Change this -->
 
 - [Stack Overflow](https://stackoverflow.com/)
-- [How to add a splash screen](https://www.youtube.com/watch?v=Q0gRqbtFLcw)
 - [Figma](https://www.figma.com/)
-- [Lecturer](https://github.com/armandpret)
-- [Zlatko Plamenov Mockups](https://www.freepik.com/author/zlatko-plamenov)
-- [Vian Du Plessis](https://github.com/Vian-du-Plessis)
+- [Lecturer](https://github.com/MikeMaynard14)
+- [Freepik](https://www.freepik.com)
 - [unDraw](https://undraw.co/)
-- [No History Activity Element](https://developer.android.com/guide/topics/manifest/activity-element#nohist)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)
+- [Gibson](http://gibson.com/)
+- [Leander van Aarde](https://github.com/leandervanAarde)
+- [Vian Du Plessis](https://github.com/Vian-du-Plessis)
+- [Reinhardt de Beer](https://github.com/EpicBlue1)
 
 [image1]: client/src/Assets/mockups/mockup1.jpg
 [image2]: Images/entername.jpg
